@@ -1,0 +1,84 @@
+/* 
+    Created on : May 27, 2016, 9:09:11 PM
+    Author     : Skywalker
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header {
+    /*border: 1px solid red;*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #00BCD4;
+    height: 80px;
+    box-shadow: 0px 4px 15px #4c4c4c;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+#logo-h {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Courgette;
+    /*text-shadow: 2px 2px 10px white;*/
+    letter-spacing: 5px;
+    float: left;
+    /*border: 1px solid green;*/
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    font-family: Josefin Slab;
+    font-weight: bold;
+    float: right;
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #fff;
+    /*border: 1px solid blue;*/
+}
+
+#menu li, #menu li a {
+    display: inline-block;
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+
+#menu li a {
+    /*border: 1px solid green;*/
+    padding: 20px;
+    border-top: 4px solid #00BCD4;
+    -webkit-transition: border-top 0.5s ease-out;
+    -moz-transition: border-top 0.5s ease-out;
+    -o-transition: border-top 0.5s ease-out;
+    transition: border-top 0.5s ease-out;   
+}
+
+#menu li a:link, #menu li a:hover, #menu li a:active, #menu li a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu li a:hover {
+    border-top: 4px solid #fff;
+    -webkit-transition: border-top 0.5s ease-out;
+    -moz-transition: border-top 0.5s ease-out;
+    -o-transition: border-top 0.5s ease-out;
+    transition: border-top 0.5s ease-out;
+}
+
+#clear-header {
+    clear: both;
+}
