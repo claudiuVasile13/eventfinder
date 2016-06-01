@@ -7,7 +7,6 @@
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="../css/login.css">
         <link rel="stylesheet" type="text/css" href="../css/header.css">
-        <link rel="stylesheet" type="text/css" href="../css/footer.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fugaz One">
@@ -26,17 +25,15 @@
                 <!-- Register Form -->
                 <div id="register">             
                     <form action="../auth/classes/loginClass.php" method="post">
-                        <a href="register.php">Don't have an account? Register Here</a>
+                        <h3>Login and start tracking your favorite events</h3>
                         <label><i class="fa fa-envelope"></i>Email</label>
-                        <input type="text" name="email" placeholder="name@host.domain" /><br>
+                        <input type="text" name="email" placeholder="name@host.domain" />
                         <button type="submit" name="submit"><i class="fa fa-forward" aria-hidden="true"></i></i>Forward</button><br>
+                        <a href="register.php">Don't have an account? Register Here</a>
                     </form>
                 </div>             
             </div>
         </div>
-        
-        <!-- Footer -->
-        <?php require_once 'footer.php'; ?>
     </body>
 </html>
     
