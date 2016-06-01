@@ -8,6 +8,4 @@
 
 require_once '../classes/loginClass.php';
 
-$login->searchEmail();
-
-
+$login->verifyPass();

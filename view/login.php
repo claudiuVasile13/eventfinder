@@ -24,7 +24,7 @@
                 <h4>Join us and find the event which fits you</h4>
                 <!-- Register Form -->
                 <div id="register">             
-                    <form action="../auth/classes/loginClass.php" method="post">
+                    <form action="../auth/login/loginEmail.php" method="post">
                         <h3>Login and start tracking your favorite events</h3>
                         <label><i class="fa fa-envelope"></i>Email</label>
                         <input type="text" name="email" placeholder="name@host.domain" />
