@@ -12,10 +12,9 @@ class loginClass {
     private $email;
     private $password;
             
-    function login(){
+    function searchEmail(){
 //        get data from POST
       $this->email = $_POST["email"];
-      $this->password = $_POST["pass"];
       
 //Connect to database
       $dbOpp =  new dbOperations();
@@ -32,6 +31,14 @@ class loginClass {
       }
     }
     
+    //Verify pass function
+     function verifyPass(){
+         $this->password = $_POST["pass"];
+         
+//         Connect to database
+         $dbOpp = new dbOperations();
+         $dbOpp->connection();
+     }
     
     // Create a cookie
     function cookie(){
