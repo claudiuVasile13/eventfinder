@@ -143,7 +143,7 @@ button:hover {
     transition: background-color 0.5s linear;
 }
 
-form a {
+#register form a {
     display: inline-block;
     font-family: Josefin Slab;
     color: #4c4c4c;
@@ -154,11 +154,11 @@ form a {
     
 }
 
-form a:link, form a:hover, form a:active, form a:visited {
+#register form a:link, form a:hover, form a:active, form a:visited {
   color: #4c4c4c;
 }
 
-form:hover {
+#register form:hover {
     box-shadow: 0 0 10px #4c4c4c;
     -webkit-transition: box-shadow 0.5s linear;
     -moz-transition: box-shadow 0.5s linear;
