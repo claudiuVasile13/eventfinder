@@ -25,7 +25,7 @@
                 <h4>Join us and find the event which fits you</h4>
                 <!-- Register Form -->
                 <div id="register">                   
-                    <form action="../auth/classes/loginPassClass.php" method="post">
+                    <form action="../auth/login/loginPass.php?email=<?php echo $_GET["email"]; ?>" method="post">
                         <span id="email"><?php echo $_GET["email"]; ?></span>
                         <label><i class="fa fa-key"></i>Password</label>
                         <input type="password" name="pass" placeholder="******" /><br>
