@@ -25,10 +25,10 @@
                 <!-- Register Form -->
                 <div id="register">                   
                     <form action="../auth/login/loginPass.php?email=<?php echo $_GET["email"]; ?>" method="post">
-                        <span id="email"><?php echo $_GET["email"]; ?></span>
-                        <label id="pass-label"><i class="fa fa-key"></i>Password</label>
+                        <span id="email"><?php echo $_GET["email"]; ?></span><br>
+                        <i class="fa fa-key" id="pass-icon"></i>
                         <input type="password" name="pass" id="pass-field" placeholder="******" />
-                        <button type="submit" name="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</button>
+                        <button type="submit" name="submit"><i class="fa fa-sign-in" aria-hidden="true"></i><span>Login</span></button>
                         <div class="row" id="options">
                             <div class="col-lg-6 col-xs-6 connect">
                                 <input type="checkbox" id="remember" name="remember"/>
@@ -42,6 +42,9 @@
                 </div>                
             </div>
         </div>
+        
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+        <script src="../js/menu.js"></script>
     </body>
 </html>
 

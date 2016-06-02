@@ -92,6 +92,7 @@ header {
     box-shadow: 0px 0px 7px #4c4c4c;
     cursor: pointer;
     padding-top: 9px;
+    display: none;
 }
 
 #res-icon-menu div{
@@ -109,8 +110,15 @@ header {
     /*background-color: red;*/
     position: absolute;
     top: 80px;
-    left: 0;
+    left: -100%;
+    z-index: 1;
     background-color: #00BCD4;
+    text-align: center;
+    padding-top: 10px;
+    -webkit-transition: left 1s linear;
+    -moz-transition: left 1s linear;
+    -o-transition: left 1s linear;
+    transition: left 1s linear;
     /*border-bottom: 2px solid #4c4c4c;*/
 }
 
@@ -139,8 +147,12 @@ header {
     text-align: center;
     font-size: 20px;
     border-bottom: 1px solid #00ACC1;
-    z-index: 1;
+    z-index: 2;
     position: relative;
+}
+
+#side-menu-list li a:nth-child(1) {
+    border-top: 1px solid #00ACC1;
 }
 
 #side-menu-list li a:link, #side-menu-list li a:hover, #side-menu-list li a:active, #side-menu-list li a:visited {
@@ -153,8 +165,20 @@ header {
     color: #00BCD4;
 }
 
-@media screen and (max-width: 650px) {
-    #register {
-        width: 90%;
+#close {
+    width: 50px;
+    margin-bottom: 5px; 
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    #menu {
+        display: none;
+    }
+    
+    #res-icon-menu {
+        display: block;
     }
 }
+

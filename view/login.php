@@ -28,13 +28,15 @@
                         <h3>Login <span>and start tracking your favorite events</span></h3>
                         <i class="fa fa-envelope" id="email-icon"></i>
                         <input type="text" name="email" placeholder="name@host.domain" />
-                        <i class="fa fa-forward" aria-hidden="true" id="responsive-button"></i>
-                        <button type="submit" name="submit"><i class="fa fa-forward" aria-hidden="true"></i>Forward</button><br>
+                        <button type="submit" name="submit"><i class="fa fa-forward" aria-hidden="true"></i><span>Forward</span></button><br>
                         <a href="register.php">Don't have an account? Register Here</a>
                     </form>
                 </div>             
             </div>
         </div>
+        
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+        <script src="../js/menu.js"></script>
     </body>
 </html>
     

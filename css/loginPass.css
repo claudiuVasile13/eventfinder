@@ -64,7 +64,7 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 10px;
     box-shadow: 0 0 3px #4c4c4c;
     background-color: #fff;
     -webkit-transition: box-shadow 0.5s linear;
@@ -73,18 +73,9 @@ html, body {
     transition: box-shadow 0.5s linear;
 }
 
-#pass-label {
-    width: 70%;
-    /*border: 1px solid red;*/
-    display: block;
-    color: #4c4c4c;
-    font-family: Josefin Slab
-}
-
-pass-label i {
-    margin-right: 5px;
-}
-
+#pass-icon {
+    font-size: 20px;
+} 
 
 #pass-field {
     width: 60%;
@@ -223,8 +214,31 @@ pass-label i {
     color: #4c4c4c;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
     #register {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 550px) {    
+    #register form button i {
+        color: #00BCD4;
+    }
+    
+    #register form button {
+        background-color: #fff;
+        width: 10%;
+    }
+    
+    #register form button:hover {
+        background-color: #fff;
+    }
+    
+    #register form button span {
+        display: none;
+    }
+    
+    #register form input {
+        width: 70%;
     }
 }
