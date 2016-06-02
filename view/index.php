@@ -4,16 +4,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/header.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="profile.php">Profile</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="login.php">Account</a></li>
-        </ul>
+        <!-- Header -->
+        <?php require_once 'header.php'; ?>
+        
         <h1>Home Page</h1>
     </body>
 </html>
 
-<?php
+

@@ -100,6 +100,7 @@ html, body {
     outline: none;
     box-shadow: none;
     border-bottom: 2px solid #00BCD4;
+    vertical-align: top;
     /*box-shadow: 0 0 3px #4c4c4c;*/
 /*    -webkit-transition: box-shadow 0.5s linear;
     -moz-transition: box-shadow 0.5s linear;
