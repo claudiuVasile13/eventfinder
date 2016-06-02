@@ -2,11 +2,11 @@
     <h1 id="logo-h">eventFinder</h1>
     <img id="res-icon-menu" src="../img/menu.png" alt="Menu" />
     <ul id="menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a a href="#">About</a></li>
-        <li><a a href="#">Events</a></li>
-        <li><a a href="#">Account</a></li>
-        <li><a a href="#">Contact</a></li>
+        <li><a a href="buy.php">Events</a></li>
+        <li><a a href="login.php">Account</a></li>
+        <li><a a href="contact.php">Contact</a></li>
     </ul>
     <div id="clear-header"></div>
 </header>
