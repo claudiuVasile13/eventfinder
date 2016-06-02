@@ -25,10 +25,11 @@
                 <!-- Register Form -->
                 <div id="register">             
                     <form action="../auth/login/loginEmail.php" method="post">
-                        <h3>Login and start tracking your favorite events</h3>
-                        <label><i class="fa fa-envelope"></i>Email</label>
+                        <h3>Login <span>and start tracking your favorite events</span></h3>
+                        <i class="fa fa-envelope" id="email-icon"></i>
                         <input type="text" name="email" placeholder="name@host.domain" />
-                        <button type="submit" name="submit"><i class="fa fa-forward" aria-hidden="true"></i></i>Forward</button><br>
+                        <i class="fa fa-forward" aria-hidden="true" id="responsive-button"></i>
+                        <button type="submit" name="submit"><i class="fa fa-forward" aria-hidden="true"></i>Forward</button><br>
                         <a href="register.php">Don't have an account? Register Here</a>
                     </form>
                 </div>             

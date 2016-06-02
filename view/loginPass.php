@@ -7,7 +7,6 @@
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="../css/loginPass.css">
         <link rel="stylesheet" type="text/css" href="../css/header.css">
-        <link rel="stylesheet" type="text/css" href="../css/footer.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fugaz One">
@@ -27,20 +26,22 @@
                 <div id="register">                   
                     <form action="../auth/login/loginPass.php?email=<?php echo $_GET["email"]; ?>" method="post">
                         <span id="email"><?php echo $_GET["email"]; ?></span>
-                        <label><i class="fa fa-key"></i>Password</label>
-                        <input type="password" name="pass" placeholder="******" /><br>
-                        <div id="options">
-                            <input type="checkbox" id="remember-me"><span>Keep me connected<span><br>
-                            <a href="#">Forgot your password?</a>
-                            <div></div>
+                        <label id="pass-label"><i class="fa fa-key"></i>Password</label>
+                        <input type="password" name="pass" id="pass-field" placeholder="******" />
+                        <button type="submit" name="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</button>
+                        <div class="row" id="options">
+                            <div class="col-lg-6 col-xs-6 connect">
+                                <input type="checkbox" id="remember" name="remember"/>
+                                <label>Stay connected</label>
+                            </div>
+                            <div class="col-lg-6 col-xs-6 pass">
+                                <a href="#">Forgot your password?</a>
+                            </div>
                         </div>
-                        <button type="submit" name="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</button><br>
                     </form>
                 </div>                
             </div>
         </div>
-        <!-- Footer -->
-        <?php require_once 'footer.php'; ?>
     </body>
 </html>
 

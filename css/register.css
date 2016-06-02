@@ -81,18 +81,18 @@ html, body {
     margin-bottom: 20px;
 }
 
-i {
+#register form label i {
     margin-right: 7px;
 }
 
-label {
+#register form label {
     display: block;
     color: #4c4c4c;
     font-family: Josefin Slab;
     font-size: 15px;
 }
 
-input {
+#register form input {
     width: 90%;
     height: 40px;
     border: none;
@@ -109,7 +109,7 @@ input {
     transition: box-shadow 0.5s linear;
 }
 
-input:focus {
+#register form input:focus {
     box-shadow: 0 0 10px #4c4c4c;
     -webkit-transition: box-shadow 0.5s linear;
     -moz-transition: box-shadow 0.5s linear;
@@ -117,7 +117,7 @@ input:focus {
     transition: box-shadow 0.5s linear;
 }
 
-button {
+#register form button {
     margin-bottom: 30px;
     margin-top: 30px;
     width: 90%;
@@ -132,7 +132,7 @@ button {
     transition: box-shadow 0.5s linear;
 }
 
-button:hover {
+#register form button:hover {
     box-shadow: 0 0 5px #4c4c4c;
     -webkit-transition: box-shadow 0.5s linear;
     -moz-transition: box-shadow 0.5s linear;
@@ -140,7 +140,7 @@ button:hover {
     transition: box-shadow 0.5s linear;
 }
 
-form a {
+#register form a {
     display: inline-block;
     font-family: Josefin Slab;
     color: #4c4c4c;
@@ -150,11 +150,11 @@ form a {
     
 }
 
-a:link, a:hover, a:active, a:visited {
+#register form a:link, a:hover, a:active, a:visited {
   color: #4c4c4c;
 }
 
-form:hover {
+#register form:hover {
     box-shadow: 0 0 10px #4c4c4c;
     -webkit-transition: box-shadow 0.5s linear;
     -moz-transition: box-shadow 0.5s linear;
