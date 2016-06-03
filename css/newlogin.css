@@ -25,37 +25,18 @@ html, body {
 .form-box {
     margin: 0;
     padding: 0;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    /*border: 1px solid red;*/
 }
 
 #register-box {
     border-left: 1px solid #fff;
 }
 
-#left-box {
+#login-box {
     border-right: 1px solid #fff;
-}
-
-#intro {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /*border: 1px solid red;*/
-}
-
-#intro h1 {
-    padding: 0;
-    margin: 0;
-    font-family: Josefin Slab;
-    font-weight: bold;
-    color: #fff;
-}
-
-#intro h4 {
-    /*letter-spacing: 5px;*/
-    font-family: Josefin Slab;
-    color: #fff;
 }
 
 header {
@@ -76,15 +57,17 @@ header {
 }
 
 .form-container {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     /*border: 1px solid blue;*/
     width: 400px;
+    margin: auto;
 }
 
 .form-container form {
     text-align:center;
     width: 100%;
     /*border: 1px solid green;*/
+    height: 365px;
     /*padding-top: 20px;*/
     /*padding-bottom: 20px;*/
 }
@@ -99,7 +82,8 @@ header {
     padding: 0;
     margin: 0;
     text-align: left;
-    font-family: Josefin Slab;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
     color: #fff;
     outline: none;
     background: #00BCD4;
@@ -112,7 +96,8 @@ header {
     /*border: 1px solid red;*/
     width: 90%;
     text-align: left;
-    font-family: Josefin Slab;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
     color: #fff;
     font-size: 16px;
 }
@@ -139,12 +124,14 @@ header {
     background-color: #00BCD4;
     color: #fff;
     font-size: 30px;
-    font-family: Fugaz One;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
 }
 
 .form-container form a {
     display: inline-block;
-    font-family: Josefin Slab;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
     color: #fff;
     font-size: 15px;
     /*margin-bottom: 20px;*/
