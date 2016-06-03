@@ -15,7 +15,7 @@
     <body>  
         <!-- Header -->
         <?php require_once 'header.php'; ?>
-        
+
         <div class="row" id="box">
             <!-- Login -->
             <div class="col-lg-6 form-box" id="login-box">
@@ -26,6 +26,8 @@
                         <input class="fields" type="text" name="email" placeholder="name@host.domain" /><br>
                         <label>Password</label>
                         <input class="fields" type="password" name="pass" placeholder="******" /><br>
+                        <input type="checkbox" id="remember" name="remember"/>
+                        <label>Stay connected</label><br>
                         <button type="submit" name="submit">LOGIN</button><br>
                         <a href="#">Forgot your password?</a>
                     </form>
@@ -42,14 +44,12 @@
                         <input class="fields" type="password" name="pass" placeholder="******" /><br>
                         <label>Re-Password</label>
                         <input class="fields" type="password" name="re-pass" placeholder="******" /><br>
-                        <input type="checkbox" id="remember" name="remember"/>
-                        <label>Stay connected</label><br>
                         <button type="submit" name="submit">REGISTER</button><br>
                     </form>
                 </div>             
             </div>  
         </div>
-        
+
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
         <script src="../js/menu.js"></script>
     </body>
