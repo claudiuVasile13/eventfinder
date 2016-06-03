@@ -35,6 +35,17 @@ header {
     margin-top: 20px;
 }
 
+#logo-img {
+    float: left;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 15px;
+    /*border: 1px solid red;*/
+    display: none;
+}
+
 #menu {
     margin: 0;
     padding: 0;
