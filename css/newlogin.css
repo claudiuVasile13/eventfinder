@@ -12,8 +12,55 @@ html, body {
     /*border: 1px solid blue;*/
 }
 
+#box {
+    margin: 0;
+    padding: 0;
+    min-height: calc(100% - 80px);
+    height: auto;
+    margin-top: 80px;
+    /*border: 1px solid red;*/
+    background-color: #00BCD4;
+}
+
+.form-box {
+    margin: 0;
+    padding: 0;
+}
+
+#register-box {
+    border-left: 1px solid #fff;
+}
+
+#left-box {
+    border-right: 1px solid #fff;
+}
+
+#intro {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*border: 1px solid red;*/
+}
+
+#intro h1 {
+    padding: 0;
+    margin: 0;
+    font-family: Josefin Slab;
+    font-weight: bold;
+    color: #fff;
+}
+
+#intro h4 {
+    /*letter-spacing: 5px;*/
+    font-family: Josefin Slab;
+    color: #fff;
+}
+
 header {
     box-shadow: none;
+    background-color: #00B8D4;
 }
 
 #logo-h {
@@ -23,3 +70,90 @@ header {
 #logo-img {
     display: block; 
 }
+
+#menu li a {
+    border-top: 4px solid #00B8D4; 
+}
+
+.form-container {
+    margin: 0 auto;
+    /*border: 1px solid blue;*/
+    width: 400px;
+}
+
+.form-container form {
+    text-align:center;
+    width: 100%;
+    /*border: 1px solid green;*/
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+}
+
+#login-form {
+}
+
+.fields {
+    width: 90%;
+    height: 30px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-family: Josefin Slab;
+    color: #fff;
+    outline: none;
+    background: #00BCD4;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 30px;
+}
+
+.form-container form label {
+    display: inline-block;
+    /*border: 1px solid red;*/
+    width: 90%;
+    text-align: left;
+    font-family: Josefin Slab;
+    color: #fff;
+    font-size: 16px;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+}
+
+.form-container form button {
+    margin-top: 30px;
+    border: none;
+    background-color: #00BCD4;
+    color: #fff;
+    font-size: 30px;
+    font-family: Fugaz One;
+}
+
+.form-container form a {
+    display: inline-block;
+    font-family: Josefin Slab;
+    color: #fff;
+    font-size: 15px;
+    /*margin-bottom: 20px;*/
+    margin-top: 30px;
+    /*border: 1px solid red;*/
+}
+
+.form-container form a:link, form a:hover, form a:active, form a:visited {
+  color: #fff;
+}
+
+

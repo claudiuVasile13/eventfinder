@@ -16,43 +16,42 @@
         <!-- Header -->
         <?php require_once 'header.php'; ?>
         
-        <h1>eventfinder.com</h1>
-        <h4>Join us and find the event which fits you</h4>
-        
         <div class="row" id="box">
+            <div id="intro">
+                <h1>eventfinder.com</h1>
+                <h4>Join us and find the event which fits you</h4>
+            </div>
+            <!-- Login -->
+            <div class="col-lg-6 register-box" id="login-box">
+                <!-- Register Form -->
+                <div id="login" class="form-container">             
+                    <form id="login-form" action="../auth/login/loginCall.php" method="post">
+                        <label>Email</label>
+                        <input class="fields" type="text" name="email" placeholder="name@host.domain" /><br>
+                        <label>Password</label>
+                        <input class="fields" type="password" name="pass" placeholder="******" /><br>
+                        <button type="submit" name="submit">LOGIN</button><br>
+                    </form>
+                </div>             
+            </div>
             <!-- Register -->
-            <div class="col-lg-6" id="register-box">
+            <div class="col-lg-6 form-box" id="register-box">
                 <!-- Register Form -->
                 <div id="register" class="form-container">             
-                    <form action="../auth/login/registerClass.php" method="post">
+                    <form id="register-form" action="../auth/login/registerCall.php" method="post">
                         <label>Email</label>
-                        <input type="text" name="email" placeholder="name@host.domain" /><br>
+                        <input class="fields" type="text" name="email" placeholder="name@host.domain" /><br>
                         <label>Password</label>
-                        <input type="password" name="pass" placeholder="******" /><br>
+                        <input class="fields" type="password" name="pass" placeholder="******" /><br>
                         <label>Re-Password</label>
-                        <input type="password" name="re-pass" placeholder="******" /><br>
+                        <input class="fields" type="password" name="re-pass" placeholder="******" /><br>
                         <input type="checkbox" id="remember" name="remember"/>
-                        <label>Stay connected</label>
-                        <button type="submit" name="submit">Register</button><br>
+                        <label>Stay connected</label><br>
+                        <button type="submit" name="submit">REGISTER</button><br>
                          <a href="#">Forgot your password?</a>
                     </form>
                 </div>             
-            </div>
-            <!-- Login -->
-            <div class="col-lg-6" id="register-box">
-                <h1>eventfinder.com</h1>
-                <h4>Join us and find the event which fits you</h4>
-                <!-- Register Form -->
-                <div id="login" class="form-container">             
-                    <form action="../auth/login/loginClass.php" method="post">
-                        <label>Email</label>
-                        <input type="text" name="email" placeholder="name@host.domain" /><br>
-                        <label>Password</label>
-                        <input type="password" name="pass" placeholder="name@host.domain" /><br>
-                        <button type="submit" name="submit">Login</button><br>
-                    </form>
-                </div>             
-            </div>
+            </div>  
         </div>
         
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
