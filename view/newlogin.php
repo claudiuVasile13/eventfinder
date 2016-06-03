@@ -10,19 +10,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fugaz One">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin Slab">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Courgette">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
     </head>
     <body>  
         <!-- Header -->
         <?php require_once 'header.php'; ?>
         
         <div class="row" id="box">
-            <div id="intro">
-                <h1>eventfinder.com</h1>
-                <h4>Join us and find the event which fits you</h4>
-            </div>
             <!-- Login -->
-            <div class="col-lg-6 register-box" id="login-box">
+            <div class="col-lg-6 form-box" id="login-box">
                 <!-- Register Form -->
                 <div id="login" class="form-container">             
                     <form id="login-form" action="../auth/login/loginCall.php" method="post">
@@ -31,6 +27,7 @@
                         <label>Password</label>
                         <input class="fields" type="password" name="pass" placeholder="******" /><br>
                         <button type="submit" name="submit">LOGIN</button><br>
+                        <a href="#">Forgot your password?</a>
                     </form>
                 </div>             
             </div>
@@ -48,7 +45,6 @@
                         <input type="checkbox" id="remember" name="remember"/>
                         <label>Stay connected</label><br>
                         <button type="submit" name="submit">REGISTER</button><br>
-                         <a href="#">Forgot your password?</a>
                     </form>
                 </div>             
             </div>  
