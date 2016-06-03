@@ -56,6 +56,10 @@ header {
     border-top: 4px solid #00B8D4; 
 }
 
+#side-menu {
+    background-color: #00B8D4;
+}
+
 .form-container {
     /*margin: 0 auto;*/
     /*border: 1px solid blue;*/

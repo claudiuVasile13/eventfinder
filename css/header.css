@@ -3,11 +3,6 @@
     Author     : Skywalker
 */
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 header {
     /*border: 1px solid red;*/
     margin: 0;
@@ -110,7 +105,7 @@ header {
     z-index: 1;
     background-color: #00BCD4;
     text-align: center;
-    padding-top: 10px;
+/*    padding-top: 10px;*/
     -webkit-transition: left 1s linear;
     -moz-transition: left 1s linear;
     -o-transition: left 1s linear;
@@ -147,10 +142,6 @@ header {
     position: relative;
 }
 
-#side-menu-list li a:nth-child(1) {
-    border-top: 1px solid #00ACC1;
-}
-
 #side-menu-list li a:link, #side-menu-list li a:hover, #side-menu-list li a:active, #side-menu-list li a:visited {
     text-decoration: none;
     color: #fff;
@@ -161,11 +152,13 @@ header {
     color: #00BCD4;
 }
 
-#close {
-    width: 50px;
-    margin-bottom: 5px; 
-    color: red;
-    cursor: pointer;
+.active {
+    left: 0 !important;
+    /*border-bottom: 2px solid #4c4c4c;*/
+}
+
+.inactive {
+    left: -100%;
 }
 
 @media screen and (max-width: 800px) {
