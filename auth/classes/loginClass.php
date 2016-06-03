@@ -40,7 +40,6 @@ class loginClass {
          $dbOpp->connection();
 //         query database for pass
          $conditions = "WHERE user_email='$this->email' AND user_password='$this->password'";
-         var_dump($conditions);
          $rows = count($dbOpp->select('users', '*', $conditions));
          if($rows){
              header("Location: ../../view/index.php");

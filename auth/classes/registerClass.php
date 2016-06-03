@@ -19,18 +19,17 @@ class registerClass {
         require_once '../../config/dbOperations.php';
         
         if(isset($_POST['submit'])) {
-            if(!empty($_POST['email']) && !empty($_POST['user']) && !empty($_POST['pass'])) {
+            if(!empty($_POST['email']) && !empty($_POST['pass'])) {
                 $this->email = $_POST['email'];
-                $this->user = $_POST['user'];
+                $this->user = strtok($this->email, "@");
                 $this->password = $_POST['pass'];
-                $this->repeatPassword = $_POST['repeatPass'];
+                $this->repeatPassword = $_POST['re-pass'];
                 
                 $sanatizeData = new validationClass();
                 $this->email = $sanatizeData->sanatizeData($this->email);
                 $this->user = $sanatizeData->sanatizeData($this->user);
                 $this->password = $sanatizeData->sanatizeData($this->password);
                 $this->repeatPassword = $sanatizeData->sanatizeData($this->repeatPassword);
-                var_dump($this->email);
                 if($sanatizeData->checkEmail($this->email) && strlen($this->password) >= 6) {
                   
                     if($this->password !== $this->repeatPassword) {
@@ -41,7 +40,6 @@ class registerClass {
                         $dbOpp->connection();
                         $conditions = "WHERE user_email='$this->email'";
                         $rows = count($dbOpp->select('users', '*', $conditions));
-                        var_dump($dbOpp->select('users', '*', $conditions));
                         if($rows) {
                             echo 'The email is already registered';
                         } else {                      
@@ -50,6 +48,8 @@ class registerClass {
                             
                             //save the data to the users tabel from the database
                             $dbOpp->insert('users', 'user_name,user_email,user_password,user_salt,user_type,user_activation_key', "'$this->user','$this->email','$this->password','userSALT','guest','userActivationKey'");
+                            header("Location: ../../view/index.php");
+                            
                         }
                     }
                     
@@ -64,4 +64,3 @@ class registerClass {
 }
 
 $register = new registerClass();
-$register->register();
