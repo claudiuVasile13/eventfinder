@@ -163,11 +163,12 @@ header {
 
 @media screen and (max-width: 800px) {
     #menu {
-        display: none;
+        display: none !important;
     }
     
     #res-icon-menu {
-        display: block;
+        display: block !important;
     }
 }
+
 

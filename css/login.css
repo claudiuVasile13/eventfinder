@@ -1,8 +1,3 @@
-/* 
-    Created on : May 26, 2016, 12:02:47 PM
-    Author     : Skywalker
-*/
-
 * {
     padding: 0;
     margin: 0;
@@ -20,194 +15,199 @@ html, body {
 #box {
     margin: 0;
     padding: 0;
+    min-height: calc(100% - 80px);
     height: auto;
     margin-top: 80px;
     /*border: 1px solid red;*/
+    background-color: #00BCD4;
+    display: flex;
+    align-items: center;
 }
 
-#container {
-    /*border: 1px solid blue;*/
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-#container img {
-    margin-top: 20px;
-    width: 150px;
-}
-
-#container h1 {
-    /*letter-spacing: 5px;*/
-    font-family: Josefin Slab;
-    font-weight: bold;
-    color: #00BCD4;
-}
-
-#container h4 {
-    /*letter-spacing: 5px;*/
-    font-family: Josefin Slab;
-    color: #00BCD4;
-}
-
-#register {
-    /*border: 1px solid green;*/
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 600px;
-    text-align: center;
-}
-
-#register form {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    padding-top: 20px;
-    box-shadow: 0 0 3px #4c4c4c;
-    background-color: #fff;
-    -webkit-transition: box-shadow 0.5s linear;
-    -moz-transition: box-shadow 0.5s linear;
-    -o-transition: box-shadow 0.5s linear;
-    transition: box-shadow 0.5s linear;
-}
-
-#register form h3 {
+.form-box {
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    height: auto;
     /*border: 1px solid red;*/
-    font-family: Josefin Slab;
-    color: #00BCD4;
-    font-weight: bold;
 }
 
-#email-icon {
-    font-size: 20px;
+#register-box {
+    border-left: 1px solid #fff;
 }
 
-#register form input {
-    width: 60%;
-    height: 40px;
+#login-box {
+    border-right: 1px solid #fff;
+}
+
+header {
+    box-shadow: none;
+    background-color: #00B8D4;
+}
+
+#logo-h {
+    display: none;
+}
+
+#logo-img {
+    display: block; 
+}
+
+#menu li a {
+    border-top: 4px solid #00B8D4; 
+}
+
+#side-menu {
+    background-color: #00B8D4;
+}
+
+.form-container {
+    padding-top: 30px;
+    text-align:center;
+    width: 400px;
+    /*border: 1px solid green;*/
+    height: 430px;
+    margin: 0 auto;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+}
+
+.group { 
+    position: relative; 
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    /*border: 1px solid red;*/
+}
+
+.fields {
+    width: 100%;
+    height: 30px;
     border: none;
     padding: 0;
     margin: 0;
-    /*border: 1px solid #4c4c4c;*/
-    text-align: center;
-    font-family: Josefin Slab;
-    color: #4c4c4c;
+    text-align: left;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    color: #fff;
     outline: none;
-    box-shadow: none;
-    border-bottom: 2px solid #00BCD4;
-    vertical-align: top;
-    /*box-shadow: 0 0 3px #4c4c4c;*/
-/*    -webkit-transition: box-shadow 0.5s linear;
-    -moz-transition: box-shadow 0.5s linear;
-    -o-transition: box-shadow 0.5s linear;
-    transition: box-shadow 0.5s linear;*/
+    background: #00BCD4;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 30px;
 }
 
-/*input:focus {
-	box-shadow: 0 0 10px #4c4c4c;
-}*/
+input:focus {
+    outline: none;
+}
 
-#register form button {
-    width: 30%;
-    margin: 0;
-    padding: 0;
-    height: 40px;
+.group label {
+    /*border: 1px solid red;*/
+    display: inline-block;
+    /*border: 1px solid red;*/
+    /*width: 100%;*/
+    /*text-align: left;*/
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition: all 0.2s ease;
+}
+
+.group input:focus ~ label, .group input.used ~ label {
+    top: -20px;
+    transform: scale(.75);
+    left: -2px;
+    /* font-size: 14px; */
+    color: #fff;
+}
+
+#remember {
+    /*border: 1px solid black;*/
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#remember label {
+    display: inline-block;
+    /*border: 1px solid red;*/
+    /*width: 90%;*/
+    /*text-align: left;*/
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    /*border: 1px solid red;*/
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+}
+
+.form-container button {
+    margin-top: 30px;
     border: none;
     background-color: #00BCD4;
-    font-family: Fugaz One;
     color: #fff;
-    font-size: 20px;
-    -webkit-transition: background-color 05s linear;
-    -moz-transition: background-color 0.5s linear;
-    -o-transition: background-color 0.5s linear;
-    transition: background-color 0.5s linear;
+    font-size: 30px;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
 }
 
-#register form button:hover {
-    background-color: #00ACC1;
-    -webkit-transition: background-color 05s linear;
-    -moz-transition: background-color 0.5s linear;
-    -o-transition: background-color 0.5s linear;
-    transition: background-color 0.5s linear;
-}
-
-#register form a {
+.form-container a {
     display: inline-block;
-    font-family: Josefin Slab;
-    color: #4c4c4c;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    color: #fff;
     font-size: 15px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    /*margin-bottom: 20px;*/
+    margin-top: 30px;
     /*border: 1px solid red;*/
+}
+
+.form-container a:link, .form-container a:hover, .form-container a:active, .form-container a:visited {
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {    
+    #box {
+        display: block;
+    }
     
+    .form-box {
+        margin-top: 0;
+    }
+    
+    #register-box {
+        border-left: none;
+        border-top: 1px solid #fff;
+        margin-bottom: 20px;
+        padding-top: 50px;
+    }
+
+    #login-box {
+        border-right: none;
+        border-bottom: 1px solid #fff;
+        margin-top: 50px;
+    }
 }
 
-#register form a:link, form a:hover, form a:active, form a:visited {
-  color: #4c4c4c;
-}
-
-#register form:hover {
-    box-shadow: 0 0 10px #4c4c4c;
-    -webkit-transition: box-shadow 0.5s linear;
-    -moz-transition: box-shadow 0.5s linear;
-    -o-transition: box-shadow 0.5s linear;
-    transition: box-shadow 0.5s linear;
-}
-
-#responsive-button {
-    display: none;
-    font-size: 20px;
-    color: #00BCD4;
-    cursor: pointer;
-}
-
-#responsive-button:hover {
-    color: #00ACC1;
-}
-
-
-@media screen and (max-width: 650px) {
-    #register {
+@media screen and (max-width: 450px) {      
+    .form-container {
         width: 90%;
-    }
-}
-
-@media screen and (max-width: 550px) {    
-    #responsive-button {
-        display: inline-block;
-    }
-    
-    #register form h3 {
-        letter-spacing: 5px;
-    }
-    
-    #register form h3 span {
-        display: none;
-    }
-    
-    #register form button i {
-        color: #00BCD4;
-    }
-    
-    #register form button {
-        background-color: #fff;
-        width: 10%;
-    }
-    
-    #register form button:hover {
-        background-color: #fff;
-    }
-    
-    #register form button span {
-        display: none;
-    }
-    
-    #register form input {
-        width: 70%;
     }
 }

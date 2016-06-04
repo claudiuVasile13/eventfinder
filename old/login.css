@@ -1,0 +1,213 @@
+/* 
+    Created on : May 26, 2016, 12:02:47 PM
+    Author     : Skywalker
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    /*border: 1px solid blue;*/
+}
+
+#box {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    margin-top: 80px;
+    /*border: 1px solid red;*/
+}
+
+#container {
+    /*border: 1px solid blue;*/
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#container img {
+    margin-top: 20px;
+    width: 150px;
+}
+
+#container h1 {
+    /*letter-spacing: 5px;*/
+    font-family: Josefin Slab;
+    font-weight: bold;
+    color: #00BCD4;
+}
+
+#container h4 {
+    /*letter-spacing: 5px;*/
+    font-family: Josefin Slab;
+    color: #00BCD4;
+}
+
+#register {
+    /*border: 1px solid green;*/
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 600px;
+    text-align: center;
+}
+
+#register form {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    box-shadow: 0 0 3px #4c4c4c;
+    background-color: #fff;
+    -webkit-transition: box-shadow 0.5s linear;
+    -moz-transition: box-shadow 0.5s linear;
+    -o-transition: box-shadow 0.5s linear;
+    transition: box-shadow 0.5s linear;
+}
+
+#register form h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    /*border: 1px solid red;*/
+    font-family: Josefin Slab;
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+#email-icon {
+    font-size: 20px;
+}
+
+#register form input {
+    width: 60%;
+    height: 40px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid #4c4c4c;*/
+    text-align: center;
+    font-family: Josefin Slab;
+    color: #4c4c4c;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid #00BCD4;
+    vertical-align: top;
+    /*box-shadow: 0 0 3px #4c4c4c;*/
+/*    -webkit-transition: box-shadow 0.5s linear;
+    -moz-transition: box-shadow 0.5s linear;
+    -o-transition: box-shadow 0.5s linear;
+    transition: box-shadow 0.5s linear;*/
+}
+
+/*input:focus {
+	box-shadow: 0 0 10px #4c4c4c;
+}*/
+
+#register form button {
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    border: none;
+    background-color: #00BCD4;
+    font-family: Fugaz One;
+    color: #fff;
+    font-size: 20px;
+    -webkit-transition: background-color 05s linear;
+    -moz-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
+}
+
+#register form button:hover {
+    background-color: #00ACC1;
+    -webkit-transition: background-color 05s linear;
+    -moz-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
+}
+
+#register form a {
+    display: inline-block;
+    font-family: Josefin Slab;
+    color: #4c4c4c;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /*border: 1px solid red;*/
+    
+}
+
+#register form a:link, form a:hover, form a:active, form a:visited {
+  color: #4c4c4c;
+}
+
+#register form:hover {
+    box-shadow: 0 0 10px #4c4c4c;
+    -webkit-transition: box-shadow 0.5s linear;
+    -moz-transition: box-shadow 0.5s linear;
+    -o-transition: box-shadow 0.5s linear;
+    transition: box-shadow 0.5s linear;
+}
+
+#responsive-button {
+    display: none;
+    font-size: 20px;
+    color: #00BCD4;
+    cursor: pointer;
+}
+
+#responsive-button:hover {
+    color: #00ACC1;
+}
+
+
+@media screen and (max-width: 650px) {
+    #register {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 550px) {    
+    #responsive-button {
+        display: inline-block;
+    }
+    
+    #register form h3 {
+        letter-spacing: 5px;
+    }
+    
+    #register form h3 span {
+        display: none;
+    }
+    
+    #register form button i {
+        color: #00BCD4;
+    }
+    
+    #register form button {
+        background-color: #fff;
+        width: 10%;
+    }
+    
+    #register form button:hover {
+        background-color: #fff;
+    }
+    
+    #register form button span {
+        display: none;
+    }
+    
+    #register form input {
+        width: 70%;
+    }
+}
