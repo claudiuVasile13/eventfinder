@@ -113,6 +113,7 @@ input:focus {
     left: 5px;
     top: 5px;
     transition: all 0.2s ease;
+    pointer-events: none;
 }
 
 .group input:focus ~ label, .group input.used ~ label {
