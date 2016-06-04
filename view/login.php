@@ -64,5 +64,6 @@
 
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
         <script src="../js/menu.js"></script>
+        <script src="../js/login.js"></script>
     </body>
 </html>
