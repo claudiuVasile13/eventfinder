@@ -11,48 +11,33 @@ class loginClass {
     
     private $email;
     private $password;
-            
-    function searchEmail(){
+    
+    function login(){
 //        get data from POST
       $this->email = $_POST["email"];
-      
+      $this->password = $_POST["pass"];
 //Connect to database
       $dbOpp =  new dbOperations();
       $dbOpp->connection();
       
 // query database 
-      $conditions = "WHERE user_email='$this->email'";
+      $conditions = "WHERE user_email='$this->email' AND user_password='$this->password'";
       $rows = count($dbOpp->select('users','*', $conditions));
       if($rows){
-          header("Location: ../../view/loginPass.php?email=$this->email");
+          if(isset($_POST["remember"])){
+                 loginClass::cookie();
+      }
+          header("Location: ../../view/index.php");
       }
       else{
-          header("Location: ../../view/login.php");
+          header("Location: ../../view/newlogin.php");
       }
     }
     
-    //Verify pass function
-     function verifyPass(){
-         $this->password = $_POST["pass"];
-         $this->email = $_GET["email"];
-//         Connect to database
-         $dbOpp = new dbOperations();
-         $dbOpp->connection();
-//         query database for pass
-         $conditions = "WHERE user_email='$this->email' AND user_password='$this->password'";
-         $rows = count($dbOpp->select('users', '*', $conditions));
-         if($rows){
-             header("Location: ../../view/index.php");
-         }
-         else{
-              header("Location: ../../view/loginPass.php?email=$this->email");
-         }
-     }
-    
     // Create a cookie
-    function cookie(){
+    static function cookie(){
         $cookie_email = $_POST["email"];
-        setcookie("isLoggedIn",$cookie_email, time() - (60), "/");
+        setcookie("isLoggedIn",$cookie_email, time() + (60), "/");
     }
     
 }
