@@ -54,7 +54,7 @@ class registerClass {
                     }
                     
                 } else {
-                    echo 'The email is invalid or the passowrd is less the 6 characters.';
+                    echo 'The email is invalid or the password is less the 6 characters.';
                 }
             }
         }

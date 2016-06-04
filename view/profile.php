@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 
 <?php
-    if(!isset($_COOKIE["isLoggedIn"])){
-        header("Location: newlogin.php");
-    }
+    session_start();
+if ($_SESSION["isLoggedIn"]!="true") {
+        header("Location: login.php");
+    
+}
+//!isset($_COOKIE["isLoggedIn"]) && 
+
 ?>
 
 
@@ -17,8 +21,8 @@
     </head>
     <body>
         <!-- Header -->
-        <?php require_once 'header.php'; ?>
-        
+        <?php // require_once 'header.php'; ?>
+
         <h1>Profile Page</h1>
     </body>
 </html>
