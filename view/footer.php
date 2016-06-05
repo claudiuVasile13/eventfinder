@@ -1,18 +1,31 @@
-<div class="row" id="footer">
-    <div class="col-lg-6" id="news">
-        <div id="news-form">
-            <form id="newsletter">
-                <h2>receive our newsletter</h2>
-                <input type="text" placeholder="your email">
-                <button type="submit">SUBMIT</button>
+<footer>
+    <div class="row footer" id="news-call">
+        <div class="col-lg-6" id="news">
+            <form id="news-form">
+                <h3>sign up to our newsletter</h3>
+                <img src="../img/news36.png" alt="E-mail" />
+                <input type="text" placeholder="name@host.domain" />
+                <button>SUBMIT</button>
             </form>
-        </div>   
+        </div>
+        <div class="col-lg-6" id="call">
+            <h3>Give Us A Call</h3>
+            <img src="../img/call.png" alt="CALL" />
+            <p>+123 456 7890</p>
+        </div>
     </div>
-    <div class="col-lg-6" id="media">
-        <a href="http://www.facebook.com" target="_blank"><i id="fb" class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="http://www.twitter.com" target="_blank"><i id="twit" class="fa fa-twitter-square" aria-hidden="true"></i></a>
-        <a href="http://www.linkedin.com" target="_blank"><i id="in" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        <a href="http://www.google.com" target="_blank"><i id="goo" class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-        <p>eventFinder <i class="fa fa-copyright" aria-hidden="true"></i> 2016. All rights reserved.</p>
-    </div>
-</div>
+    <div class="row footer" id="copy-media">
+        <div class="col-lg-9" id="copy">
+            <img id="logo-img" src="https://www.w3.org/html/logo/downloads/HTML5_1Color_White.png" alt="LOGO" />
+            <img src="../img/copy.png" alt="copyright" />
+            <p>2016 <span id="eventfinder">eventFinder</span>.All rights reserved.</p>
+        </div> 
+        <div class="col-lg-3" id="media">
+            <div id="media-box">
+                <a href="#" target="_blank"><img src="../img/facebook.png" alt="facebook" /></a>
+                <a href="#" target="_blank"><img src="../img/google.png" alt="google" /></a>
+                <a href="#" target="_blank"><img src="../img/linkedin.png" alt="linkedin" /></a>
+                <a href="#" target="_blank"><img src="../img/twitter.png" alt="twitter" /></a>
+            </div>
+        </div>
+</footer>

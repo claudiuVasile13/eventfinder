@@ -3,13 +3,13 @@
     margin: 0;
 }
 
-html, body {
+body, html {
     margin: 0;
     padding: 0;
-    position:absolute;
+    position: absolute;
     height: 100%;
     width: 100%;
-    /*border: 1px solid blue;*/
+    /*border: 1px solid black;*/
 }
 
 #box {

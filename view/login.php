@@ -21,7 +21,7 @@
             <div class="col-lg-6 form-box" id="login-box">
                 <!-- Register Form -->
                 <!--<div id="login" class="form-container">-->             
-                    <form id="login-form" class="form-container" class="form-container" action="../auth/login/loginCall.php" method="post">
+                    <form id="login-form" class="form-container" action="../auth/login/loginCall.php" method="post">
                         <div class="group">
                             <input class="fields" type="text" name="email" />
                             <label>Email</label>

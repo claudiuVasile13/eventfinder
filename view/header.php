@@ -1,5 +1,5 @@
 <header>
-    <h1 id="logo-h">eventFinder</h1>
+    <!--<h1 id="logo-h">eventFinder</h1>-->
     <img id="logo-img" src="https://www.w3.org/html/logo/downloads/HTML5_1Color_White.png" alt="LOGO">
     <img id="res-icon-menu" src="../img/menu.png" alt="Menu" />
     <ul id="menu">
