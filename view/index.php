@@ -17,9 +17,81 @@
         <!-- Header -->
         <?php require_once 'header.php'; ?>
         
-        <h1>Home Page</h1>
+        <div id="box-content">
+            <div id="top-space"></div>
+            <div class="row content">
+                <div class="col-lg-4 box">
+                    <div class="event">
+                        <img src="http://www.tbgalati.ro/wp-content/uploads/2012/12/Real_Logo.png" />
+                        <h3>Summer Event</h3>
+                        <h4>July 2016</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 box">
+                    <div class="event">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Kaufland.png" />
+                        <h3>Free Sausage</h3>
+                        <h4>May 2016</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 box">
+                    <div class="event">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Kaufland.png" />
+                        <h3>Summer Event</h3>
+                        <h4>July 2016</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-lg-4 box">
+                    <div class="event">
+                        <img src="http://www.tbgalati.ro/wp-content/uploads/2012/12/Real_Logo.png" />
+                        <h3>Summer Event</h3>
+                        <h4>September 2016</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 box">
+                    <div class="event">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Kaufland.png" />
+                        <h3>Summer Event</h3>
+                        <h4>July 2016</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 box">
+                    <div class="event">
+                        <img src="http://www.tbgalati.ro/wp-content/uploads/2012/12/Real_Logo.png" />
+                        <h3>Free Sausage</h3>
+                        <h4>July 2016</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-lg-4 box">
+                    <div class="event">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Kaufland.png" />
+                        <h3>Free Sausage</h3>
+                        <h4>August 2016</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 box">
+                    <div class="event">
+                        <img src="http://www.tbgalati.ro/wp-content/uploads/2012/12/Real_Logo.png" />
+                        <h3>Free Sausage</h3>
+                        <h4>July 2016</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 box">
+                    <div class="event">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Kaufland.png" />
+                        <h3>Summer Event</h3>
+                        <h4>August 2016</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-space"></div>
         
-        <!-- Header -->
+        <!-- Footer -->
         <?php require_once 'footer.php'; ?>
     </body>
 </html>
