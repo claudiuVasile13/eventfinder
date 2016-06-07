@@ -45,7 +45,7 @@
                 <!--<div id="register" class="form-container">-->             
                     <form id="register-form" class="form-container" action="../auth/login/registerCall.php" method="post">
                         <div class="group">
-                            <input class="fields" type="text" name="email"  />
+                            <input class="fields" type="text" name="email" id="email_r"/>
                             <label>Email</label>
                         </div>
                         <div class="group">
@@ -65,5 +65,6 @@
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
         <script src="../js/menu.js"></script>
         <script src="../js/login.js"></script>
+        <script src="../js/dbajax.js"></script>
     </body>
 </html>
