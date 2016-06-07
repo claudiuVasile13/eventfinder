@@ -12,7 +12,6 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin Slab">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
     </head>
-    <body>  
         <!-- Header -->
         <?php require_once 'header.php'; ?>
 
