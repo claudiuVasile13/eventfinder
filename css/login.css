@@ -39,17 +39,9 @@ body, html {
     border-right: 1px solid #fff;
 }
 
-header {
+#header {
     box-shadow: none;
     background-color: #00B8D4;
-}
-
-#logo-h {
-    display: none;
-}
-
-#logo-img {
-    display: block; 
 }
 
 #menu li a {
