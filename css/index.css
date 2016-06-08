@@ -42,18 +42,19 @@
 .cover {
     width: 100%;
     height: 250px;
-/*    opacity: 1;
-    -webkit-transition: opacity 0.1s linear;
-    -moz-transition: opacity 0.1s linear;
-    -o-transition: opacity 0.1s linear;
-    transition: opacity 0.1s linear;*/
+}
+
+.info-button {
+    /*border: 1px solid green;*/
+    margin: 0;
+    padding: 0;
 }
 
 .info {
     /*border: 1px solid red;*/
     text-align: left;
-    padding: 5px;
-    border-bottom: 1px solid #E0E0E0;
+    padding: 14px;
+    /*border-bottom: 1px solid #E0E0E0;*/
 }
 
 .info img {
@@ -67,54 +68,71 @@
     margin: 0;
     padding: 0;
     margin-left: 5px;
+    width: 65%;
 }
 
-.user h4 {
+.company {
     padding: 0;
     margin: 0;
     font-family: 'Roboto Condensed';
     font-weight: 700;
+    font-size: 20px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-.user p {
+.event {
     padding: 0;
     margin: 0;
     font-family: 'Roboto Condensed';
     font-weight: 300;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .button-box {
-    background-color: red;
+    /*background-color: red;*/
+    padding: 0;
+    margin: 0;
     padding: 10px 0 10px 0;
-    display: none;
-    -webkit-transition: display 0.5s linear;
-    -moz-transition: display 0.5s linear;
-    -o-transition: display 0.5s linear;
-    transition: display 0.5s linear;
 }
 
-.button-box button {
-    padding: 3px 20px 3px 20px;
-    border: none;
-    background-color: #00BCD4;
-    color: #fff;
-    font-family: 'Fugaz One';
+.button-box a {
+    /*border: 1px solid red;*/
+    display: none;
+    -webkit-transition: display 1s linear;
+    -moz-transition: display 1s linear;
+    -o-transition: display 1s linear;
+    transition: display 1s linear;   
+}
+
+.favorite, .like {
+    /*background-color: red;*/
+    padding: 0;
+    margin: 0;
+    /*font-size: 10px;*/
+}
+
+.favorite {
+    color: red;
+}
+
+.like {
+    color: #00BCD4;
 }
 
 .card:hover > .cover {
     opacity: .7;
-/*    -webkit-transition: opacity 0.1s linear;
-    -moz-transition: opacity 0.1s linear;
-    -o-transition: opacity 0.1s linear;
-    transition: opacity 0.1s linear;*/
 }
 
-.card:hover > .button-box {
-    display: block;
-    -webkit-transition: display 0.5s linear;
-    -moz-transition: display 0.5s linear;
-    -o-transition: display 0.5s linear;
-    transition: display 0.5s linear;
+.card:hover .button-box a {
+    display: inline-block;
+    -webkit-transition: display 1s linear;
+    -moz-transition: display 1s linear;
+    -o-transition: display 1s linear;
+    transition: display 1s linear; 
 }
 
 @media screen and (max-width: 800px) {      

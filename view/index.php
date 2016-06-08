@@ -12,6 +12,8 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fugaz One">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin Slab">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     </head>
 
     <body> 
@@ -24,105 +26,110 @@
                 <div class="col-lg-4 col-sm-4 col-xs-12 card-box">
                     <div class="card">
                         <img class="cover" src="http://science-all.com/images/wallpaper/wallpaper-06.jpg" />
-                        <div class="info">
-                            <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
-                            <div class="user">    
-                                <h4>Kaufland Company</h4>
-                                <p>Free Drinks - 24th July 2016</p>
+                        <div class="row info-button">
+                            <div class="col-lg-10 col-sm-10 col-xs-10 info">
+                                <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
+                                <div class="user">    
+                                    <p class="company">Kaufland Company</p>
+                                    <p class="event">Free Drinks - 24th July 2016dasdasdadasdadasassssssssssssssssssssssssss</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="button-box">
-                            <button class="view">View</button>
-                            <button class="Add">Add</button>
-                            <button class="Add">Vote</button>
+                            <div class="col-lg-2 col-sm-2 col-xs-2 button-box">
+                                <a href="#"><i class="material-icons favorite">favorite</i></a><br>
+                                <a href=""><i class="material-icons like">thumb_up</i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-4 col-xs-12 card-box">
                     <div class="card">
                         <img class="cover" src="http://science-all.com/images/wallpaper/wallpaper-06.jpg" />
-                        <div class="info">
-                            <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
-                            <div class="user">  
-                                <h4>Intel Company</h4>
-                                <p>Free Sausage - 30th May 2016</p>
+                        <div class="row info-button">
+                            <div class="col-lg-10 col-sm-10 col-xs-10 info">
+                                <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
+                                <div class="user">    
+                                    <p class="company">Kaufland Company</p>
+                                    <p class="event">Free Drinks - 24th July 2016dasdasdadasdadasassssssssssssssssssssssssss</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="button-box">
-                            <button class="view">View</button>
-                            <button class="Add">Add</button>
-                            <button class="Add">Vote</button>
+                            <div class="col-lg-2 col-sm-2 col-xs-2 button-box">
+                                <a href="#"><i class="material-icons favorite">favorite</i></a><br>
+                                <a href=""><i class="material-icons like">thumb_up</i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-4 col-xs-12 card-box">
                     <div class="card">
                         <img class="cover" src="http://science-all.com/images/wallpaper/wallpaper-06.jpg" />
-                        <div class="info">
-                            <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
-                            <div class="user">  
-                                <h4>Microsoft Corporation</h4>
-                                <p>Summer Event - 1st July 2016</p>
+                        <div class="row info-button">
+                            <div class="col-lg-10 col-sm-10 col-xs-10 info">
+                                <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
+                                <div class="user">    
+                                    <p class="company">Kaufland Company</p>
+                                    <p class="event">Free Drinks - 24th July 2016dasdasdadasdadasassssssssssssssssssssssssss</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="button-box">
-                            <button class="view">View</button>
-                            <button class="Add">Add</button>
-                            <button class="Add">Vote</button>
+                            <div class="col-lg-2 col-sm-2 col-xs-2 button-box">
+                                <a href="#"><i class="material-icons favorite">favorite</i></a><br>
+                                <a href=""><i class="material-icons like">thumb_up</i></a>
+                            </div>
                         </div>
                     </div>
                 </div>              
             </div>
-            
             <div class="row content">
                 <div class="col-lg-4 col-sm-4 col-xs-12 card-box">
                     <div class="card">
                         <img class="cover" src="http://science-all.com/images/wallpaper/wallpaper-06.jpg" />
-                        <div class="info">
-                            <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
-                            <div class="user">    
-                                <h4>Kaufland Company</h4>
-                                <p>Free Drinks - 24th July 2016</p>
+                        <div class="row info-button">
+                            <div class="col-lg-10 col-sm-10 col-xs-10 info">
+                                <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
+                                <div class="user">    
+                                    <p class="company">Kaufland Company</p>
+                                    <p class="event">Free Drinks - 24th July 2016dasdasdadasdadasassssssssssssssssssssssssss</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="button-box">
-                            <button class="view">View</button>
-                            <button class="Add">Add</button>
-                            <button class="Add">Vote</button>
+                            <div class="col-lg-2 col-sm-2 col-xs-2 button-box">
+                                <a href="#"><i class="material-icons favorite">favorite</i></a><br>
+                                <a href=""><i class="material-icons like">thumb_up</i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-4 col-xs-12 card-box">
                     <div class="card">
                         <img class="cover" src="http://science-all.com/images/wallpaper/wallpaper-06.jpg" />
-                        <div class="info">
-                            <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
-                            <div class="user">  
-                                <h4>Intel Company</h4>
-                                <p>Free Sausage - 30th May 2016</p>
+                        <div class="row info-button">
+                            <div class="col-lg-10 col-sm-10 col-xs-10 info">
+                                <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
+                                <div class="user">    
+                                    <p class="company">Kaufland Company</p>
+                                    <p class="event">Free Drinks - 24th July 2016dasdasdadasdadasassssssssssssssssssssssssss</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="button-box">
-                            <button class="view">View</button>
-                            <button class="Add">Add</button>
-                            <button class="Add">Vote</button>
+                            <div class="col-lg-2 col-sm-2 col-xs-2 button-box">
+                                <a href="#"><i class="material-icons favorite">favorite</i></a><br>
+                                <a href=""><i class="material-icons like">thumb_up</i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-4 col-xs-12 card-box">
                     <div class="card">
                         <img class="cover" src="http://science-all.com/images/wallpaper/wallpaper-06.jpg" />
-                        <div class="info">
-                            <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
-                            <div class="user">  
-                                <h4>Microsoft Corporation</h4>
-                                <p>Summer Event - 1st July 2016</p>
+                       <div class="row info-button">
+                            <div class="col-lg-10 col-sm-10 col-xs-10 info">
+                                <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" />
+                                <div class="user">    
+                                    <p class="company">Kaufland Company</p>
+                                    <p class="event">Free Drinks - 24th July 2016dasdasdadasdadasassssssssssssssssssssssssss</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="button-box">
-                            <button class="view">View</button>
-                            <button class="Add">Add</button>
-                            <button class="Add">Vote</button>
+                            <div class="col-lg-2 col-sm-2 col-xs-2 button-box">
+                                <a href="#"><i class="material-icons favorite">favorite</i></a><br>
+                                <a href=""><i class="material-icons like">thumb_up</i></a>
+                            </div>
                         </div>
                     </div>
                 </div>              
