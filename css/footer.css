@@ -8,21 +8,87 @@
     margin: 0;
     padding: 0;
     /*background-color: #00BCD4;*/
-    height: 100px;
+    min-height: 100px;
+    height: auto;
 }
 
 .footer {
     /*border: 1px solid red;*/
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100%;
+    height: auto;
+    background-color: #fff;
 }
 
-#news-call {
-    background-image: url('../img/stars.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+#contact {
+    /*border: 1px solid red;*/
+    text-align: center;
+    padding: 20px;
 }
 
+#contact-box {
+    /*border: 1px solid red;*/
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
 
+#contact-box h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans';
+    color: #4c4c4c;
+    margin-bottom: 10px;
+}
+
+#contact-box h4{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans';
+    color: #4c4c4c;
+}
+
+#copy {
+    /*border: 1px solid green;*/
+    text-align: center;
+    padding: 20px;
+}
+
+#copy-box {
+    /*border: 1px solid blue;*/ 
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+#copy-box i {
+    color: #4c4c4c;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#copy-box i:hover {
+    color: #00BCD4;
+}
+
+#copy-box p {
+    color: #4c4c4c;
+    font-family: 'PT Sans';
+    font-size: 18px;
+}
+
+#copy-box a {
+    font-family: 'PT Sans';
+    display: inline-block;
+}
+
+#first {
+    margin-right: 10px;
+}
+
+#copy-box a:link, #copy-box a:hover, #copy-box a:active, #copy-box a:visited {
+    color: #4c4c4c;
+}
