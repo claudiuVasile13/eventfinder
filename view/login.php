@@ -48,11 +48,11 @@
                             <label>Email</label>
                         </div>
                         <div class="group">
-                            <input class="fields" type="password" name="pass" />
+                            <input class="fields" type="password" name="pass" id="pass_r" />
                             <label>Password</label>
                         </div>
                         <div class="group">
-                            <input class="fields" type="password" name="re-pass" />
+                            <input class="fields" type="password" name="re-pass" id="repass_r" />
                             <label>Re-Password</label>
                         </div>                      
                         <button type="submit" name="submit">REGISTER</button><br>

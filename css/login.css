@@ -176,6 +176,16 @@ input:focus {
   color: #fff;
 }
 
+.valid{
+    border-bottom:2px solid green;
+    transition:border 0.2s linear;
+}
+
+.invalid{
+    border-bottom:2px solid red;
+    transition:border 0.2s linear;
+}
+
 @media screen and (max-width: 1200px) {    
     #box {
         display: block;
