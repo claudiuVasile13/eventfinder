@@ -14,26 +14,29 @@ $(document).ready(function () {
         var email = $("#email_r").val();
         if (email !== '') {
             if (pass === repass) {
-                
+                $("#repass_rs").css("display", "none");
                 $(this).removeClass("invalid");
                 $(this).addClass("valid");
             } else {
+                $("#repass_rs").css("display", "inline-block");
                 $(this).removeClass("valid");
                 $(this).addClass("invalid");
             }
         }
     });
-    
-    $("#pass_r").keyup(function(){
-       var pass = $(this).val();
-       var length_pass = pass.length;
-       if(length_pass<6){
-                $(this).removeClass("valid");
-                $(this).addClass("invalid");
-            } else {
-                $(this).removeClass("invalid");
-                $(this).addClass("valid");
-            }
+
+    $("#pass_r").keyup(function () {
+        var pass = $(this).val();
+        var length_pass = pass.length;
+        if (length_pass < 6) {
+            $("#pass_rs").css("display", "inline-block");
+            $(this).removeClass("valid");
+            $(this).addClass("invalid");
+        } else {
+            $("#pass_rs").css("display", "none");
+            $(this).removeClass("invalid");
+            $(this).addClass("valid");
+        }
     });
 });
 
