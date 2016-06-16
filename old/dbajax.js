@@ -45,7 +45,7 @@ function searchMail() {
             } else {
                 $("#email_r").removeClass("invalid");
                 $("#email_r").addClass("valid");
-                $('#email_rs').text('sss');
+                $('#email_rs').text('');
                 $("#email_rs").css("display", "none");
             }
         }

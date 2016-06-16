@@ -49,12 +49,12 @@
                             <span id="email_rs"></span>
                         </div>
                         <div class="group">
-                            <input class="fields r_fields" type="password" name="pass" id="pass_r" />
+                            <input class="fields r_fields" type="password" name="pass" id="pass_r" disabled="disabled"/>
                             <label>Password</label>
                             <span id="pass_rs">Password is too short</span>
                         </div>
                         <div class="group">
-                            <input class="fields r_fields" type="password" name="re-pass" id="repass_r" />
+                            <input class="fields r_fields" type="password" name="re-pass" id="repass_r" disabled="disabled"/>
                             <label>Re-Password</label>
                             <span id="repass_rs">Password does not match</span>
                         </div>                      
@@ -67,6 +67,5 @@
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
         <script src="../js/menu.js"></script>
         <script src="../js/login.js"></script>
-        <script src="../js/dbajax.js"></script>
     </body>
 </html>
