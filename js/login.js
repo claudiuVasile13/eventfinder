@@ -88,7 +88,6 @@ function validEmail() {
         var validState = emailRegExp.test($email);
         console.log(validState);
         if(validState) {
-            console.log('muie serban');
             $('#email_rs').text('');
             $('#email_rs').css("display", "none");
             $('#email_r').removeClass("invalid");
@@ -113,7 +112,7 @@ function searchMail(email) {
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            console.log(xmlhttp.responseText + 'ddd');
+            console.log(xmlhttp.responseText);
             if (xmlhttp.responseText >= 1) {
 //                    console.log(xmlhttp.responseText);
                 $("#email_r").removeClass("valid");
