@@ -29,14 +29,14 @@ function registerPassLenght() {
         var pass = $(this).val();
         var length_pass = pass.length;
         if (lengthPass(length_pass)) {
-            $("#pass_rs").css("display", "inline-block");
-            $(this).removeClass("valid");
-            $(this).addClass("invalid");
-            $('#repass_r').attr('disabled', false);
-        } else {
             $("#pass_rs").css("display", "none");
             $(this).removeClass("invalid");
             $(this).addClass("valid");
+            $('#repass_r').attr('disabled', false);
+        } else {                    
+            $("#pass_rs").css("display", "inline-block");
+            $(this).removeClass("valid");
+            $(this).addClass("invalid");
             $('#repass_r').attr('disabled', 'disabled');
             
         }
@@ -65,7 +65,7 @@ function registerSamePass() {
 }
 
 //check if the password is at least n characters long
-function lenghtPass(pass) {
+function lengthPass(pass) {
     if(pass >= 6) {
         return true;
     }
@@ -86,7 +86,7 @@ function validEmail() {
         var $email = $('#email_r').val();
         var emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         var validState = emailRegExp.test($email);
-        console.log(validState);
+//        console.log(validState);
         if(validState) {
             $('#email_rs').text('');
             $('#email_rs').css("display", "none");
@@ -94,15 +94,15 @@ function validEmail() {
             $('#email_r').addClass('valid'); 
             
             var search = searchMail($email);
-            
+            console.log(search + 'da');
             if(search) {
                 $("#email_r").removeClass("valid");
                 $("#email_r").addClass("invalid");
                 $('#email_rs').text('');
                 $('#email_rs').text('Email is already taken');
                 $("#email_rs").css("display", "inline-block");
-                $('#pass_r').attr('disabled', 'disabled');
-            } else {
+                $('#pass_r').attr('disabled', 'disabled');            
+            } else {               
                 $("#email_r").removeClass("invalid");
                 $("#email_r").addClass("valid");
                 $('#email_rs').text('');
@@ -121,8 +121,8 @@ function validEmail() {
 
 //search in the user table for a user with the email that was filled out, 
 //if we find a record it means that the message has already been taken, if not the email can be registered
+var response = false;
 function searchMail(email) {
-    var response = false;
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
