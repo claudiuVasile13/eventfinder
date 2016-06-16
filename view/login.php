@@ -33,7 +33,7 @@
                             <input type="checkbox" name="remember"/>
                             <label>Stay connected</label><br>
                         </div>
-                        <button type="submit" name="submit">LOGIN</button><br>
+                        <button type="submit" name="submit" id="l_button" disabled="disabled">LOGIN</button><br>
                         <a href="#">Forgot your password?</a>
                     </form>
                 <!--</div>-->             
@@ -44,21 +44,21 @@
                 <!--<div id="register" class="form-container">-->             
                     <form id="register-form" class="form-container" action="../auth/login/registerCall.php" method="post">
                         <div class="group">
-                            <input class="fields" type="text" name="email" id="email_r"/>
+                            <input class="fields r_fields" type="text" name="email" id="email_r"/>
                             <label>Email</label>
-                            <span id="email_rs">Email is already taken</span>
+                            <span id="email_rs"></span>
                         </div>
                         <div class="group">
-                            <input class="fields" type="password" name="pass" id="pass_r" />
+                            <input class="fields r_fields" type="password" name="pass" id="pass_r" />
                             <label>Password</label>
                             <span id="pass_rs">Password is too short</span>
                         </div>
                         <div class="group">
-                            <input class="fields" type="password" name="re-pass" id="repass_r" />
+                            <input class="fields r_fields" type="password" name="re-pass" id="repass_r" />
                             <label>Re-Password</label>
                             <span id="repass_rs">Password does not match</span>
                         </div>                      
-                        <button type="submit" name="submit">REGISTER</button><br>
+                        <button type="submit" name="submit" id="r_button" disabled="disabled">REGISTER</button><br>
                     </form>
                 <!--</div>-->             
             </div>  
