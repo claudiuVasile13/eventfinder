@@ -107,7 +107,7 @@ function validEmail() {
                 $("#email_r").addClass("valid");
                 $('#email_rs').text('');
                 $("#email_rs").css("display", "none");
-                $('#pass_r').attr('disabled', 'false');
+                $('#pass_r').attr('disabled', false);
             }
         } else {
             $('#email_rs').text('');
@@ -130,13 +130,12 @@ function searchMail(email) {
             if (xmlhttp.responseText >= 1) {
                 response = false;
             } else {
-                response = true;  
+                response = true;        //email is valid and unused
             }
         }
     };
     
     xmlhttp.open("GET", "../js/ajax_php/searchMail.php?email=" + email, true);
-    xmlhttp.send(); 
-    
+    xmlhttp.send();
     return response;
 }
