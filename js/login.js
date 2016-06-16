@@ -92,7 +92,23 @@ function validEmail() {
             $('#email_rs').css("display", "none");
             $('#email_r').removeClass("invalid");
             $('#email_r').addClass('valid'); 
-            searchMail('#email_r');
+            
+            var search = searchMail($email);
+            
+            if(search) {
+                $("#email_r").removeClass("valid");
+                $("#email_r").addClass("invalid");
+                $('#email_rs').text('');
+                $('#email_rs').text('Email is already taken');
+                $("#email_rs").css("display", "inline-block");
+                $('#pass_r').attr('disabled', 'disabled');
+            } else {
+                $("#email_r").removeClass("invalid");
+                $("#email_r").addClass("valid");
+                $('#email_rs').text('');
+                $("#email_rs").css("display", "none");
+                $('#pass_r').attr('disabled', 'false');
+            }
         } else {
             $('#email_rs').text('');
             $('#email_rs').text('Email is not valid');
@@ -106,32 +122,21 @@ function validEmail() {
 //search in the user table for a user with the email that was filled out, 
 //if we find a record it means that the message has already been taken, if not the email can be registered
 function searchMail(email) {
-    $(email).on('focusout', function () {
-    var $email = $(email).val();
-//        console.log($email);
+    var response = false;
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             console.log(xmlhttp.responseText);
             if (xmlhttp.responseText >= 1) {
-//                    console.log(xmlhttp.responseText);
-                $("#email_r").removeClass("valid");
-                $("#email_r").addClass("invalid");
-                $('#email_rs').text('');
-                $('#email_rs').text('Email is already taken');
-                $("#email_rs").css("display", "inline-block");
-                $('#pass_r').attr('disabled', 'disabled');
-//                    console.log('da');
+                response = false;
             } else {
-                $("#email_r").removeClass("invalid");
-                $("#email_r").addClass("valid");
-                $('#email_rs').text('');
-                $("#email_rs").css("display", "none");
-                $('#pass_r').attr('disabled', 'false');
+                response = true;  
             }
         }
     };
-    xmlhttp.open("GET", "../js/ajax_php/searchMail.php?email=" + $email, true);
-    xmlhttp.send();
-    });  
+    
+    xmlhttp.open("GET", "../js/ajax_php/searchMail.php?email=" + email, true);
+    xmlhttp.send(); 
+    
+    return response;
 }
