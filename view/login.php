@@ -22,12 +22,14 @@
                 <!--<div id="login" class="form-container">-->             
                     <form id="login-form" class="form-container" action="../auth/login/loginCall.php" method="post">
                         <div class="group">
-                            <input class="fields" type="text" name="email" />
+                            <input class="fields" type="text" name="email" id="email_l" />
                             <label>Email</label>
+                            <span id="email_ls">Email is not valid</span>
                         </div>
                         <div class="group">
-                            <input class="fields" type="password" name="pass" />
+                            <input class="fields" type="password" name="pass" id="pass_l" />
                             <label>Password</label>
+                            <span id="pass_ls">Password is too short</span>
                         </div>
                         <div id="remember">
                             <input type="checkbox" name="remember"/>
