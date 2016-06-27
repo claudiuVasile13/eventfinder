@@ -7,6 +7,7 @@
  */
 
 require '../../config/dbOperations.php';
+require '../classes/hashClass.php';
 
 class loginClass {
 
@@ -22,19 +23,30 @@ class loginClass {
         $dbOpp->connection();
 
 // query database 
-        $conditions = "WHERE user_email='$this->email' AND user_password='$this->password'";
-        $rows = count($dbOpp->select('users', '*', $conditions));
-        if ($rows) {
-            if (isset($_POST["remember"])) {
-                loginClass::setCookie();
-            } 
-            else{
-                loginClass::startSession();
+        $emailCheck = "WHERE user_email='$this->email'"; 
+        $rows = $dbOpp->select('users', '*', $emailCheck);
+        
+        if (count($rows)) {
+            
+            $result = hashClass::checkPass($this->password, $rows[0]['user_password']);
+            if($result) {
+                //remember me
+                if (isset($_POST["remember"])) {
+                    loginClass::setCookie();
+                } 
+                else{
+                    loginClass::startSession();
+                }
+            
+                header("Location: ../../view/index.php");
+            } else {
+                header("Location: ../../view/login.php?pass=404");
             }
-            header("Location: ../../view/index.php");
+            
+            
         }
         else {
-            header("Location: ../../view/login.php");
+            header("Location: ../../view/login.php?email=404");
         }
     }
 

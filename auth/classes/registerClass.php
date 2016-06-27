@@ -6,6 +6,8 @@
  * @author Skywalker
  */
 
+require_once 'hashClass.php';
+
 class registerClass {
     
     private $email,
@@ -30,37 +32,24 @@ class registerClass {
                 $this->user = $sanatizeData->sanatizeData($this->user);
                 $this->password = $sanatizeData->sanatizeData($this->password);
                 $this->repeatPassword = $sanatizeData->sanatizeData($this->repeatPassword);
-                if($sanatizeData->checkEmail($this->email) && strlen($this->password) >= 6) {
+                if($sanatizeData->checkEmail($this->email)) {
                   
-                    if($this->password !== $this->repeatPassword) {
-                        echo 'The passwords don\'t match';
-                    } else {
-                        //check if the email is available
-                        $dbOpp = new dbOperations();
-                        $dbOpp->connection();
-                        $conditions = "WHERE user_email='$this->email'";
-                        $rows = count($dbOpp->select('users', '*', $conditions));
-                        if($rows) {
-                            echo 'The email is already registered';
-                        } else {                      
-                            //secure the passowrd
+                    $dbOpp = new dbOperations();
+                    $dbOpp->connection();                 
+                    //secure the passowrd
+                    $passHash = hashClass::passHash($this->password);             
+//                    var_dump($passHash);
+                    //save the data to the users tabel from the database
+                    $dbOpp->insert('users', 'user_name,user_email,user_password,user_salt,user_type,user_activation_key', "'$this->user','$this->email','$passHash','guest','userActivationKey'");
+                    header("Location: ../../view/index.php");
                             
-                            
-                            //save the data to the users tabel from the database
-                            $dbOpp->insert('users', 'user_name,user_email,user_password,user_salt,user_type,user_activation_key', "'$this->user','$this->email','$this->password','userSALT','guest','userActivationKey'");
-                            header("Location: ../../view/index.php");
-                            
-                        }
-                    }
-                    
-                } else {
-                    echo 'The email is invalid or the password is less the 6 characters.';
                 }
             }
+                    
         }
-        
-    } 
+    }
     
-}
-
+} //end of the register class
+        
+    
 $register = new registerClass();
