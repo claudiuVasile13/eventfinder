@@ -170,6 +170,9 @@ html, body {
     color: #00ACC1;
 }
 
+#error{
+    
+}
 
 @media screen and (max-width: 650px) {
     #register {
