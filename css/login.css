@@ -197,6 +197,16 @@ input:focus {
     transition:border 0.2s linear;
 }
 
+#error{
+
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    color:red;
+}
+
+
 @media screen and (max-width: 1200px) {    
     #box {
         display: block;

@@ -38,14 +38,14 @@ function loginEmail() {
             $('#email_ls').css("display", "none");
             $('#email_l').removeClass("invalid");
             $('#email_l').addClass('valid');
-            $('#pass_r').attr('disabled', false); 
+            $('#pass_l').attr('disabled', false); 
         } else {
             $('#email_ls').text('');
             $('#email_ls').text('Email is not valid');
             $('#email_ls').css("display", "inline-block");
             $('#email_l').removeClass("valid");
             $('#email_l').addClass('invalid');
-            $('#pass_r').attr('disabled', 'disabled'); 
+            $('#pass_l').attr('disabled', 'disabled'); 
         }
     });
 }

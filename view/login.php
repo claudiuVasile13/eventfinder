@@ -28,7 +28,7 @@
                             <span id="email_ls">Email is not valid</span>
                         </div>
                         <div class="group">
-                            <input class="fields" type="password" name="pass" id="pass_l" />
+                            <input class="fields" type="password" name="pass" id="pass_l" disabled="disabled"/>
                             <label>Password</label>
                             <span id="pass_ls">Password is too short</span>
                         </div>
@@ -36,6 +36,16 @@
                             <input type="checkbox" name="remember"/>
                             <label>Stay connected</label><br>
                         </div>
+                        <?php
+                            if(isset($_GET["pass"])){
+                                echo "<br><span id='error'>The password is wrong</span><br>";
+                            }
+                            else if(isset($_GET["email"])){
+                                echo "<br><span id='error'>The email is wrong</span><br>";
+                            }
+                            
+                            
+                        ?>
                         <button type="submit" name="submit" id="l_button" disabled="disabled">LOGIN</button><br>
                         <a href="#">Forgot your password?</a>
                     </form>
