@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <title>Login</title>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <a href="../auth/classes/hashClass.php"></a>
         <link rel="stylesheet" type="text/css" href="../css/header.css">
         <link rel="stylesheet" type="text/css" href="../css/login.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
