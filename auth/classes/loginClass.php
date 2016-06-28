@@ -6,8 +6,8 @@
  * @author TTraian
  */
 
-require '../../config/dbOperations.php';
-require '../classes/hashClass.php';
+require_once '../../config/dbOperations.php';
+require_once '../classes/hashClass.php';
 
 class loginClass {
 
@@ -32,7 +32,7 @@ class loginClass {
             if($result) {
                 //remember me
                 if (isset($_POST["remember"])) {
-                    loginClass::setCookie();
+                    loginClass::setCookie($this->email);
                 } 
                 else{
                     loginClass::startSession();
@@ -51,11 +51,58 @@ class loginClass {
     }
 
     // Create a cookie
-    static function setCookie() {
-        $cookie_email = $_POST["email"];
-        setcookie("isLoggedIn", $cookie_email, time() + (60), "/");
+    static function setCookie($email) {
+ 
+        $tokenData = self::resetToken();  //get a random token and its hash
+        
+        $validator = openssl_random_pseudo_bytes(22); //generate a unique random validator
+        $validatorHash = hash("sha256", $validator);    // hashing validator
+        
+        $dbOpp = new dbOperations();
+        $dbOpp->connection();                 //connect to database
+        $userID = $dbOpp->select("users", "ID", "WHERE user_email='$email'");   //select id by user email
+
+        $dbOpp->insert("auth_tokens", "user_id, token, validator", "'" . $userID[0]['ID'] . "','" . $tokenData['tokenHash'] . "', '$validatorHash'");
+        
+        setcookie("token", $tokenData["token"], time() + (60), "/");    //set token cookie
+        setcookie("validator", $validator, time() + (60), "/");         //set validator cookie
     }
 
+    static function validateCookie() {
+        if(isset($_COOKIE["validator"]) && isset($_COOKIE["token"])){
+            $validator = $_COOKIE["validator"];
+            $validatorHash = hash("sha256", $validator);
+            
+            $token = $_COOKIE["token"];
+            $dbOpp = new dbOperations();
+            $dbOpp->connection();
+            $results = $dbOpp->select("auth_tokens", "*", "WHERE validator=$validatorHash");
+            
+            if(count($results)){
+                $tokenHash = hash("sha256", $token);
+                if(hash_equals($results[0]["token"], $tokenHash)){
+                    $tokenData = self::resetToken();
+                    $dbOpp->update("auth_tokens", "token", "" . $tokenData['tokenHash'] . "");  //update with new hashed token
+                    setcookie("token", $tokenData['token'], time() + (60), "/");
+                }
+                else{
+                    unset($_COOKIE);
+                    header("Location: ../../view/login.php");
+                }
+            }
+            else header("Location: ../../view/login.php");
+        }
+        else header("Location: ../../view/login.php");
+    }
+    
+    static function resetToken() {
+        $token = openssl_random_pseudo_bytes(22); //generate random token
+        $tokenHash = hash("sha256", $token); //hashing token
+        $tokenData = ["token"=>$token, "tokenHash"=>$tokenHash];
+        return $tokenData;
+    }
+    
+    
     //Create a seesion
     static function startSession() {
         session_start();
