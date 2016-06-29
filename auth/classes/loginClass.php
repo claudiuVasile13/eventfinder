@@ -6,8 +6,8 @@
  * @author TTraian
  */
 
-require_once '../../config/dbOperations.php';
-require_once '../classes/hashClass.php';
+require_once __DIR__."/../../config/dbOperations.php";
+require_once __DIR__."/hashClass.php";
 
 class loginClass {
 
@@ -64,35 +64,40 @@ class loginClass {
 
         $dbOpp->insert("auth_tokens", "user_id, token, validator", "'" . $userID[0]['ID'] . "','" . $tokenData['tokenHash'] . "', '$validatorHash'");
         
-        setcookie("token", $tokenData["token"], time() + (60), "/");    //set token cookie
-        setcookie("validator", $validator, time() + (60), "/");         //set validator cookie
+        setcookie("token", $tokenData["token"], time() + (3600), "/");    //set token cookie
+        setcookie("validator", $validator, time() + (3600), "/");         //set validator cookie
     }
 
     static function validateCookie() {
         if(isset($_COOKIE["validator"]) && isset($_COOKIE["token"])){
             $validator = $_COOKIE["validator"];
             $validatorHash = hash("sha256", $validator);
-            
+//            var_dump($validatorHash);
+//            die();
             $token = $_COOKIE["token"];
             $dbOpp = new dbOperations();
             $dbOpp->connection();
-            $results = $dbOpp->select("auth_tokens", "*", "WHERE validator=$validatorHash");
-            
+            $results = $dbOpp->select("auth_tokens", "*", "WHERE validator='$validatorHash'");
             if(count($results)){
                 $tokenHash = hash("sha256", $token);
                 if(hash_equals($results[0]["token"], $tokenHash)){
                     $tokenData = self::resetToken();
-                    $dbOpp->update("auth_tokens", "token", "" . $tokenData['tokenHash'] . "");  //update with new hashed token
-                    setcookie("token", $tokenData['token'], time() + (60), "/");
+                    $dbOpp->update("auth_tokens","token='" . $tokenData['tokenHash'] . "'", "WHERE id='" . $results[0]['id'] . "'");  //update with new hashed token
+                    setcookie("token", $tokenData['token'], time() + (3600), "/");
+                    return true;
                 }
-                else{
+                else {
                     unset($_COOKIE);
                     header("Location: ../../view/login.php");
                 }
             }
-            else header("Location: ../../view/login.php");
+            else {
+                header("Location: ../../view/login.php");
+            }
         }
-        else header("Location: ../../view/login.php");
+        else { 
+            header("Location: ../../view/login.php");
+        }
     }
     
     static function resetToken() {

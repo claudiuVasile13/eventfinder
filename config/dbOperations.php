@@ -45,7 +45,7 @@ class dbOperations {
     //delete data from a specific tabel where field = value
     function delete($tabel, $conditions) {
             
-        $query = "DELETE FROM {$tabel} WHERE {$conditions}";
+        $query = "DELETE FROM {$tabel} {$conditions}";
         $exe = $this->conn->prepare($query);
         
         return $exe->execute();
@@ -55,7 +55,7 @@ class dbOperations {
     //update data from a specific tabel based on specific conditions
     function update($tabel, $fieldsAndValues, $conditions) {
         
-        $query = "UPDATE {$tabel} SET {$fieldsAndValues} WHERE {$conditions}";
+        $query = "UPDATE {$tabel} SET {$fieldsAndValues} {$conditions}";
         $exe = $this->conn->prepare($query);
         
         return $exe->execute();
@@ -65,10 +65,15 @@ class dbOperations {
     //select data from a specific tabel based on specific conditions
     function select($tabel, $fields, $conditions) {
         
-        $query = "SELECT {$fields} FROM {$tabel} {$conditions}";
-        $exe = $this->conn->prepare($query);
-        $exe->execute();
-        $results = $exe->fetchAll();
+        try {
+            $query = "SELECT {$fields} FROM {$tabel} {$conditions}";
+            $exe = $this->conn->prepare($query);
+            $exe->execute();
+            $results = $exe->fetchAll();
+        } catch(PDOException $e) {
+            return $e->getMessage();
+        }
+        
         return $results;
         
     } 
