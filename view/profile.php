@@ -1,16 +1,5 @@
 <!DOCTYPE html>
 
-<?php
-    session_start();
-if ($_SESSION["isLoggedIn"]!="true") {
-        header("Location: login.php");
-    
-}
-//!isset($_COOKIE["isLoggedIn"]) && 
-
-?>
-
-
 <html>
     <head>
         <meta charset="UTF-8">
@@ -21,7 +10,7 @@ if ($_SESSION["isLoggedIn"]!="true") {
     </head>
     <body>
         <!-- Header -->
-        <?php // require_once 'header.php'; ?>
+        <?php require_once 'header.php'; ?>
 
         <h1>Profile Page</h1>
     </body>

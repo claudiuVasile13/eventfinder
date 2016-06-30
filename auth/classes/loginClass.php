@@ -90,7 +90,7 @@ class loginClass {
                     setcookie("token", "", -1, "/");
                     unset($_COOKIE["validator"]);
                     setcookie("validator", "", -1, "/");
-                    header("Location: ../../view/login.php?hack=true");
+                    header("Location: http://localhost/eventfinder/view/login.php?hack=true");
                 }
             }
             else {
