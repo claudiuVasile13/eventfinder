@@ -82,25 +82,19 @@ class loginClass {
                 $tokenHash = hash("sha256", $token);
                 if(hash_equals($results[0]["token"], $tokenHash)){
                     $tokenData = self::resetToken();
-
                     $dbOpp->update("auth_tokens","token='" . $tokenData['tokenHash'] . "'", "WHERE id='" . $results[0]['id'] . "'");  //update with new hashed token
-                    setcookie("token", $tokenData['token'], time() + (3600), "/");
-                    return true;
-
-                    $dbOpp->update("auth_tokens", "token", "" . $tokenData['tokenHash'] . "");  //update with new hashed token
                     setcookie("token", $tokenData['token'], time() + (3600), "/");
                 }
                 else {
-                    unset($_COOKIE);
-                     header("Location: ../../view/login.php");
+                    unset($_COOKIE["token"]);
+                    setcookie("token", "", -1, "/");
+                    unset($_COOKIE["validator"]);
+                    setcookie("validator", "", -1, "/");
+                    header("Location: ../../view/login.php?hack=true");
                 }
             }
             else {
-
                 header("Location: ../../view/login.php");
-
-                 header("Location: ../../view/login.php");
-
             }
         }
         else { 

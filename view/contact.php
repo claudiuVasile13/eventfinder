@@ -1,4 +1,6 @@
-
+<?php
+    require_once '../auth/login/cookie.php';
+?>
 
 <!DOCTYPE html>
 
