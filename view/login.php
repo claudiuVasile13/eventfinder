@@ -46,7 +46,7 @@
                             
                         ?>
                         <button type="submit" name="submit" id="l_button" disabled="disabled">LOGIN</button><br>
-                        <a href="#">Forgot your password?</a>
+                        <a href="forgotPass.php">Forgot your password?</a>
                     </form>
                 <!--</div>-->             
             </div>
