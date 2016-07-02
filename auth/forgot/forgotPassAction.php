@@ -3,11 +3,14 @@
 require_once __DIR__ . "/../../email/sendEmail.php";
 if (isset($_POST["email"])) {
     $email = $_POST["email"];
-    $e = $sendEmail->sendMessage($email);
-    var_dump($e);
-    
+    $value = $sendEmail->sendMessage($email);
+    if($value){
+        header("Location: ../../view/login.php");
+    }
+    else{
+        header("Location: ../../view/forgotPass.php");
+    }
 }
-else echo "eroare";
 
 
 
