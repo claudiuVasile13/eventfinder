@@ -23,8 +23,8 @@ class sendEmail {
             $mail->Host = "smtp.gmail.com";
             $mail->Username = "eventfinderInc@gmail.com";
             $mail->Password = "our_business_2016";
-            $mail->SMTPSecure = "tls";
             $mail->Port = 587;
+            $mail->SMTPSecure = "tls";
             $mail->setFrom($email);
             $mail->addAddress($email);
             $mail->addReplyTo($email, "Replay");
