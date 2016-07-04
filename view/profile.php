@@ -11,7 +11,9 @@
     <body>
         <!-- Header -->
         <?php require_once 'header.php'; ?>
-
-        <h1>Profile Page</h1>
+        
+        <img src="">
+        <input type="text" readonly="readonly" value="Tanase Traian">
+        
     </body>
 </html>
