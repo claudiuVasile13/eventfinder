@@ -25,6 +25,13 @@ class sendEmail {
             $mail->Password = "our_business_2016";
             $mail->SMTPSecure = "tls";
             $mail->Port = 587;
+            $mail->SMTPOptions = array(
+                    'ssl' => array(
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                    'allow_self_signed' => true
+                    )
+                );
             $mail->setFrom($email);
             $mail->addAddress($email);
             $mail->addReplyTo($email, "Replay");
