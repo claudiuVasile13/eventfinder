@@ -94,8 +94,32 @@ input:focus {
 
 button {
     border: none;
-    background-color: #fff;
+    background-color: #D3D3D3;
     color: #00BCD4;
     padding: 5px;
     width: 250px;
+}
+
+span{
+    /*border:1px solid red;*/
+    display:inline-block;
+    width: 250px;
+    text-align: left;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    color:red;
+    display: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.valid{
+    border-bottom:1px solid green;
+    transition:border 0.2s linear;
+}
+
+.invalid{
+    border-bottom:1px solid red;
+    transition:border 0.2s linear;
 }

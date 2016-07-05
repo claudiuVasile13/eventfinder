@@ -3,9 +3,9 @@
 <html>
     <head>
         <title>Recover Password</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="../css/forgotPass.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
     </head>
@@ -22,11 +22,15 @@
                 </p>
                 <div id="form-container">
                     <form action="../auth/forgot/forgotPassAction.php" method="POST">
-                        <input type="text" name="email" id="email-field" placeholder="Email">
-                        <button type="submit" id="submit-button">Submit</button>
+                        <input type="text" name="email" id="email-field" placeholder="Email" />
+                        <button type="submit" id="submit-button" disabled="disabled">Submit</button><br>
+                        <span id="email-field-s"></span>
                     </form>
                 </div>
             </div>
         </div>
+        
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+        <script src="../js/forgotPass.js"></script>
     </body>
 </html>

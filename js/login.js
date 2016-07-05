@@ -46,6 +46,7 @@ function loginEmail() {
             $('#email_l').removeClass("valid");
             $('#email_l').addClass('invalid');
             $('#pass_l').attr('disabled', 'disabled'); 
+            $('#email_ls').addClass('invalid');
         }
     });
 }

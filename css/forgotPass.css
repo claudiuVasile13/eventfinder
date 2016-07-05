@@ -78,7 +78,7 @@ form {
     /*border: 1px solid green;*/
 }
 
-#email-field {
+input {
     width: 200px;
     padding: 0;
     margin: 0;
@@ -120,4 +120,23 @@ input:focus {
     /*height: 30px;*/
     padding: 5px;
     margin-bottom: 10px;
+}
+
+#email-field-s {
+    /*border:1px solid red;*/
+    display:inline-block;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    display: none;
+    color: red;
+}
+
+.valid{
+    border-bottom:1px solid green;
+    transition:border 0.2s linear;
+}
+
+.invalid{
+    border-bottom:1px solid red;
+    transition:border 0.2s linear;
 }
