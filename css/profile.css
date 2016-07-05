@@ -1,0 +1,99 @@
+/* 
+    Created on : Jul 5, 2016, 11:11:20 AM
+    Author     : TTraian
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:100%;
+}
+
+.row{
+    min-height: calc(100% - 80px);
+    margin:0;
+    padding:0;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+#main_containter{
+    position:relative;
+    padding: 0;
+    margin:0 auto;
+    margin-top:100px;
+    border:1px solid green;
+    text-align: center;
+}
+
+#cover-photo{
+    position:relative;
+    width:100%;
+    height:150px;
+    border:1px solid #0016b0;
+}
+
+#cover-photo img{
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+}
+
+#profile-photo{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    /*border: 1px solid black;*/
+    top: -75px;
+}
+
+#profile-photo img{
+    width: 150px;
+    border:5px solid white;
+    border-radius: 75px;
+}  
+
+#info{
+    padding:0;
+    margin:0 auto;
+    margin-top:-60px;
+    position: relative;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#name{
+    border: none;
+}
+
+#location{
+    padding:0;
+    margin:0 auto;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+#location li{
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    display: inline-block;
+}
+
+#location li input{
+    text-align:center;
+    width:100px;
+    border:none;
+}
+
+
+
