@@ -5,9 +5,13 @@
  */
 
 
-$(document).ready(function(){
-    $("input").click(function(){
-        $(this).removeAttr('readonly');
-    });
+$(document).ready(function () {
+
     
+    $("#edit-icon").click(function(){
+       $(this).addClass("nodisplay");
+       $("#submit-icon").addClass("display");
+       $("input").removeAttr('readonly');
+    });
+
 });

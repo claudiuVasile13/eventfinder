@@ -24,13 +24,22 @@
                 <div id="profile-photo">
                     <img src="../profile_img/default-profile-picture.png">
                 </div>
+
                 <div id="info">
-                    <input id="name" type="text" readonly="readonly" value="Tanase Traian Constantin">
-                    <ul id="location">
+                    <div id="info-icons">
+                        <form>
+                            <button type="button"><img id="edit-icon" src="../profile_img/document-edit.png"></button>
+                            <button type="submit"><img id="submit-icon" hidden="hidden" src="../profile_img/clipboard-checked.png"></button>
+                        </form>
+                    </div>
+                    <input id="name" type="text" readonly="readonly" value="Tanase Traian Constantin"><br>
+                    <ul class="inlinie" id="location">
                         <li><input type="text" readonly="readonly" value="Romania"></li>
                         <li><input type="text" readonly="readonly" value="Arges"></li>
                         <li><input id="oras" readonly="readonly" type="text"  value="Mioveni"></li>
+
                     </ul>
+
 
                 </div>
             </div>
