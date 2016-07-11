@@ -9,12 +9,14 @@ function popup() {
 
     $('.wallpaper').click(function(){
         $('#main-box').css('display', 'flex');
-        $('body').css('overflow', 'hidden');
+//        $('body').css('overflow', 'hidden');
     }); 
-
-    $("#main-box").click(function() {
-        $("#main-box").css("display", "none");
-        $('body').css('overflow', 'scroll');
-    });
-	
+    
+//    $("#main-container").mouseup(function(e) {
+//        if(e.target.id !== $("#offer-box").attr("id")) {
+//            $("#main-box").css("display", "none");
+////            $('body').css('overflow', 'scroll');
+//        }
+//    }); 
+//        
 };

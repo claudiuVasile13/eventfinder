@@ -41,7 +41,7 @@ class registerClass {
 //                    var_dump($passHash);
                     //save the data to the users tabel from the database
                     $dbOpp->insert('users', 'user_name,user_email,user_password,user_type,user_activation_key', "'$this->user','$this->email','$passHash','guest','userActivationKey'");
-                    header("Location: ../../view/index.php");
+                    header("Location: ../../index.php");
                             
                 }
             }

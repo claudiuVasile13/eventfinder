@@ -4,8 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Buy</title>
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../css/buy.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/buy.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>

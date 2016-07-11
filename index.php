@@ -5,14 +5,16 @@
         <meta charset="UTF-8">
         <title>Home</title>
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../css/index.css">
-        <link rel="stylesheet" type="text/css" href="../css/header.css">
-        <link rel="stylesheet" type="text/css" href="../css/footer.css">    
-        <link rel="stylesheet" type="text/css" href="../css/buy.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">    
+        <link rel="stylesheet" type="text/css" href="css/buy.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fugaz One">
+        <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin Slab">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT Sans">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"

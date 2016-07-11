@@ -38,15 +38,15 @@ class loginClass {
                     loginClass::startSession();
                 }
             
-                header("Location: ../../view/index.php");
+                header("Location: ../../index.php");
             } else {
-                header("Location: ../../view/login.php?pass=404");
+                header("Location: ../../login.php?pass=404");
             }
             
             
         }
         else {
-            header("Location: ../../view/login.php?email=404");
+            header("Location: ../../login.php?email=404");
         }
     }
 
@@ -94,11 +94,11 @@ class loginClass {
                 }
             }
             else {
-                header("Location: ../../view/login.php");
+                header("Location: ../../login.php");
             }
         }
         else { 
-            header("Location: ../../view/login.php");
+            header("Location: ../../login.php");
         }
     }
     
