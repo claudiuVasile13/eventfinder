@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-//	setTimeout(popup, 2000);
         popup();
 });
 
@@ -8,15 +6,9 @@ $(document).ready(function(){
 function popup() {
 
     $('.wallpaper').click(function(){
-        $('#main-box').css('display', 'flex');
-//        $('body').css('overflow', 'hidden');
+        $('#modal-popup').css('display', 'flex');
+        $('#modal-popup').css('align-items', 'center');
+        $('#modal-popup').css('justify-content', 'center');
     }); 
-    
-//    $("#main-container").mouseup(function(e) {
-//        if(e.target.id !== $("#offer-box").attr("id")) {
-//            $("#main-box").css("display", "none");
-////            $('body').css('overflow', 'scroll');
-//        }
-//    }); 
-//        
+          
 };

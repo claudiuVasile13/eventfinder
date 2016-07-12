@@ -3,61 +3,28 @@
     Author     : Skywalker
 */
 
-/** {
-    padding: 0;
-    margin: 0;
-}*/
-
-/*body, html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 1px solid green;
-}*/
-
-#main-box {
-    position: fixed;
-    z-index: 200;
-    /*top: 0px;*/
-    /*left: 0px;*/
-    width: 100%;
-    min-height: 100%;
-    height: auto;
-    /*background-color: red;*/
+#modal-popup {
     /*border: 1px solid red;*/
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, .7);
-    display: none;
 }
 
-#box-container {
-    width: 80%;
-    height: 550px;
-    padding-top: 50px;
-    margin: 20px;
+.modal-content {
+/*    border: 1px solid green;*/
+    margin: 0;
+}
+
+.modal-dialog {
+    margin: 0;
     /*border: 1px solid blue;*/
 }
 
-#offer-box {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 400px;
+.modal-body {
     background-color: #00BCD4;
-    position: relative;
-    box-shadow: 0 1px 4px 0 rgba(0,188,212, .35);
+    margin: 0;
 }
 
-#description-box {
-    width: 55%;
-    /*background-color: yellow;*/
-    height: 100%;
-    padding: 20px 30px 20px 40px;    
+#about {
+    /*border: 1px solid red;*/
+    width: calc(100% - 340px);
 }
 
 .name {
@@ -82,44 +49,20 @@
 }
 
 #info {
-    width: 400px;
-    height: 530px;
+    width: 300px;
+    height: 500px;
     background-color: #fff;
     position: absolute;
     top: -40px;
     right: 40px;
-    box-shadow: 0 1px 4px 0 rgba(0,188,212, .35);
-    transition: box-shadow .2s;
-}
-
-#info:hover {
-    box-shadow: 0 2px 2px 0 rgba(0,188,212,0.2),0 6px 10px 0 rgba(0,188,212,0.3);
 }
 
 .currentImg {
     width: 100%;
-    height: 250px;
+    height: 200px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.gallery {
-    width: 100%;
-    height: 120px;
-    /*border: 1px solid red;*/
-    text-align: center;
-    padding: 10px;
-}
-
-.gallery > img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-}
-
-.gallery > img:last-child {
-    margin-right: 0px;
 }
 
 .media {
@@ -142,8 +85,6 @@
 
 .media > a > img {
     width: 50px;
-    height: 50px;
-    
 }
 
 
