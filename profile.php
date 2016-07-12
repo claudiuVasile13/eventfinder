@@ -4,15 +4,15 @@
     <head>
         <meta charset="UTF-8">
         <title>Profile</title>
-<<<<<<< HEAD:view/profile.php
+
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="../css/header.css">
         <link rel="stylesheet" type="text/css" href="../css/profile.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-=======
+
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/header.css">
->>>>>>> offer/design:profile.php
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
