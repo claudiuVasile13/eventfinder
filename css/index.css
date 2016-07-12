@@ -3,6 +3,10 @@
     Author     : Skywalker
 */
 
+body, html {
+    position: absolute;
+}
+
 #items {
     padding-top: 100px;
     /*border: 1px solid red;*/
@@ -44,6 +48,7 @@
     -moz-transition: opacity 0.5s linear;
     -o-transition: opacity 0.5s linear;
     transition: opacity 0.5s linear;
+    cursor: pointer;
 }
 
 .info {

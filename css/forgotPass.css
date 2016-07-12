@@ -1,0 +1,142 @@
+/* 
+    Created on : Jul 4, 2016, 11:31:17 AM
+    Author     : Skywalker
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+
+#main-box {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    height: auto;
+    /*background-color: red;*/
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+#form-box {
+    background-color: #00BCD4;
+    width: 90%;
+    text-align: center;
+    padding: 0;
+    margin:0;
+    padding: 20px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .35);
+    transition: box-shadow .2s;
+}
+
+#form-box:hover {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+#title {
+    /*border: 1px solid blue;*/
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: 'Orbitron';
+}
+
+#description {
+    /*border: 1px solid red;*/
+    text-align: justify;
+    line-height: 30px;
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.number {
+    color: black;
+    font-weight: bold;
+}
+
+#form-container {
+    /*border: 1px solid red;*/
+}
+
+form {
+    /*border: 1px solid green;*/
+}
+
+input {
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 30px;
+    padding: 10px;
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+:-ms-input-placeholder {  
+   color: #fff; 
+}
+
+#submit-button {
+    border: none;
+    /*width: 200px;*/
+    color: #00BCD4;
+    background-color: #fff;
+    /*height: 30px;*/
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#email-field-s {
+    /*border:1px solid red;*/
+    display:inline-block;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    display: none;
+    color: red;
+}
+
+.valid{
+    border-bottom:1px solid green;
+    transition:border 0.2s linear;
+}
+
+.invalid{
+    border-bottom:1px solid red;
+    transition:border 0.2s linear;
+}

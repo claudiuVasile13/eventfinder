@@ -27,7 +27,7 @@ class newPassClass {
                     $hashPass = new hashClass();
                     $hash = $hashPass->passHash($this->pass);
                     $dbOpp->update("users", "user_password='$hash', recover_token='null'", "WHERE recover_token='$this->token'");
-                    header("Location: ../../view/login.php");
+                    header("Location: ../../login.php");
                 } else
                     echo "al treilea if";
             } else

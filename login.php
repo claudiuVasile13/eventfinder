@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Login</title>
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../css/header.css">
-        <link rel="stylesheet" type="text/css" href="../css/login.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fugaz One">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin Slab">
