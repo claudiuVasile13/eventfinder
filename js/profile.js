@@ -9,8 +9,8 @@ $(document).ready(function () {
 
     
     $("#edit-icon").click(function(){
-       $(this).addClass("nodisplay");
-       $("#submit-icon").addClass("display");
+       $(this).css("display","none");
+       $("#submit-icon").css("display","block");
        $("input").removeAttr('readonly');
     });
 
