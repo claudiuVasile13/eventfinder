@@ -31,18 +31,26 @@
                 </div>
 
                 <div id="info">
-                    <input id="name" type="text" readonly="readonly" value="Tanase Traian Constantin"><br>
-                    <ul class="inlinie" id="location">
-                        <li><input type="text" readonly="readonly" value="Romania"></li>
-                        <li><input type="text" readonly="readonly" value="Arges"></li>
-                        <li><input id="oras" readonly="readonly" type="text"  value="Mioveni"></li>
-                    </ul>
-                    <p>Contact email: <input id="email" type="email" readonly="readonly" value="tanase_traian95@yahoo.com"></p>
-                    <div id="social-media">
-                        <a href="http://www.facebook.com"><img src="/img/facebook.png"></a>
-                        <a href="http://www.twitter.com"><img src="/img/twitter.png"></a>
-                        <a href="http://www.google.com"><img src="/img/google.png"></a>
-                        <a href="http://www.linkedin.com"><img src="/img/linkedin.png"></a>
+                    <input id="name" type="text" name="name" readonly="readonly" value="Tanase Traian Constantin"><br>
+                    <div id="personal-info">
+
+                        <form  id="location" method="GET">
+                            <label>Country:</label>
+                            <input type="text" readonly="readonly" name="country" value="Romania"><br>
+                            <label>County/State:</label>
+                            <input type="text" readonly="readonly" name="state" value="Arges"><br>
+                            <label>City:</label>
+                            <input id="oras" readonly="readonly" type="text" name="city" value="Mioveni"><br>
+                            <label>Contact:</label>
+                            <input id="email" type="email" readonly="readonly" name="email" value="tanase_traian95@yahoo.com">
+                        </form>
+                        <div id="social-media">
+                            <p>Social media:</p>
+                            <a href="http://www.facebook.com"><img src="/img/facebook.png"></a>
+                            <a href="http://www.twitter.com"><img src="/img/twitter.png"></a>
+                            <a href="http://www.google.com"><img src="/img/google.png"></a>
+                            <a href="http://www.linkedin.com"><img src="/img/linkedin.png"></a>
+                        </div>
                     </div>
                     <div id="counters">
                         <div class="row">
@@ -67,10 +75,8 @@
         </div>
 
         <div id="info-icons">
-            <form>
-                <button type="button"><img id="edit-icon" src="/profile_img/document-edit.png"></button>
-                <button type="submit"><img id="submit-icon" hidden="hidden" src="/profile_img/clipboard-checked.png"></button>
-            </form>
+            <button type="button"><img id="edit-icon" src="/profile_img/document-edit.png"></button>
+            <button type="submit" form="location"><img id="submit-icon" hidden="hidden" src="/profile_img/clipboard-checked.png"></button>
         </div>
 
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
